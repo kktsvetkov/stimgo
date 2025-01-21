@@ -92,38 +92,40 @@
 				if (preg_match($regex, $title, $matches))
 				{
 					$found = true;
-					$this->names[] = [
+					$this->addToNames(
 						(int) $matches['episodeNumber'],
 						$matches['firstName'],
 						$matches['lastName'],
 						(int) gmdate('Y', strToTime($item->pubDate))
-					];
+					);
+
+					break;
 				}
 			}
 
 			if (array_key_exists($title, self::hardToParseNames))
 			{
 				$found = true;
-				$this->names[] = self::hardToParseNames[$title];
+				$this->addToNames(...self::hardToParseNames[$title]);
 			}
 
 			if ('Еп010 | За инициативите на Аз Мога - Тук и Сега с Константин и Алекса' == $title)
 			{
 				$found = true;
-				$this->names[] = [10, 'Константин', 'Рачев', 2016];
-				$this->names[] = [10, 'Алекса', 'Тачев', 2016];
+				$this->addToNames(10, 'Константин', 'Рачев', 2016);
+				$this->addToNames(10, 'Алекса', 'Тачев', 2016);
 			}
 
 			if ('Еп067 | Супер Продуктивност със Зорница Стефанова и Силвина Фурнаджиева' == $title)
 			{
 				$found = true;
-				$this->names[] = [67, 'Зорница', 'Стефанова', 2017];
-				$this->names[] = [67, 'Силвина', 'Фурнаджиева', 2017];
+				$this->addToNames(67, 'Зорница', 'Стефанова', 2017);
+				$this->addToNames(67, 'Силвина', 'Фурнаджиева', 2017);
 			}
 
 			if (!$found)
 			{
-				var_dump($title);
+				echo "<?> {$title}\n";
 			}
 		}
 
@@ -133,6 +135,11 @@
 	private function isPodcastEpisode(string $title): bool
 	{
 		return 0 === strpos($title, 'Еп');
+	}
+
+	private function addToNames(int $episodeNumber, string $firstName, string $lastName, int $year)
+	{
+		$this->names[] = [$episodeNumber, $firstName, $lastName, $year];
 	}
 
 })->download()->parse();
