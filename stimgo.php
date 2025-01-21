@@ -1,0 +1,138 @@
+<?php
+
+# StImGo = Statistika za Imenata na Gostite
+
+(new class() {
+	const feedURL = 'https://feeds.soundcloud.com/users/soundcloud:users:234169782/sounds.rss';
+
+	const localFeed = 'feed.xml';
+
+	const localStats = 'stats.json';
+
+	private const regExps = [
+		'~^Еп(?<episodeNumber>\d+) \| ( )?(Проф\. )?(д\-р )?(?<firstName>\w+) (?<lastName>\w+)\: ~u',
+		'~^Еп(?<episodeNumber>\d+) \| (?<firstName>\w+) (?<lastName>\w+) \- .+\: ~u',
+		'~^Еп(?<episodeNumber>\d+) \| (?<firstName>\w+) (?<lastName>\w+\-\w+)\: ~u',
+		'~^Еп(?<episodeNumber>\d+) \| .+ (?:с|със) (?<firstName>\w+) (?<lastName>\w+)$~u',
+	];
+
+	private const hardToParseNames = [
+		'Еп410 | EN | Dr. Menis Yousry: Nothing in life can be forced!' =>
+			[410, 'Менис', 'Юсри', 2024],
+		'Еп384 | EN | Robert Vlach: Share what you know with others!' =>
+			[384, 'Робърт', 'Влах', 2024],
+		'Еп377 | EN | Moritz Zimmermann: Be ambitious. Be curious. Feel challenged.' =>
+			[377, 'Мориц', 'Цимърман', 2023],
+		'Еп244 | EN | Peter Sage: The Questions are the Steering Wheel of the Mind' =>
+			[244, 'Питър', 'Сейдж', 2021],
+		'Еп230 | EN | Dennis Sheperd: Be patient and positive and the sunrise will come' =>
+			[230, 'Денис', 'Шепърд', 2021],
+		'Еп216 | Шеф Жоро Иванов: Човек трябва да има нагласата да се обучава през целия си професионален път' =>
+			[216, 'Жоро', 'Иванов', 2020],
+		'Еп186 | EN | Gabriel Marangoni: The black belt is not the end!' =>
+			[186, 'Габриел', 'Марангони', 2020],
+		'Еп170 | Доц. Д-р Милена Георгиева: ДНК не е нашата съдба!' =>
+			[170, 'Милена', 'Георгиева', 2020],
+		'Еп169 | EN | Dr. David Ryback: Helping others is really rewarding' =>
+			[169, 'Дейвид', 'Райбек', 2019],
+		'Еп160 | Богомила "Мила Боги" Трайкова: Себе си е нещо, което създаваш' =>
+			[160, 'Богомила', 'Трайкова', 2019],
+		'Еп118 | Стопан: Как е възможно сам да определяш своето възнаграждение?' =>
+			[118, 'Калин', 'Даскалов', 2019],
+		'Еп093 | EN | Mario Tomic: There is only ONE shortcut to your success' =>
+			[93, 'Марио', 'Томич', 2018],
+		'Еп087 | Христомир Витанов “Мъро“: Колко лесно и важно е да присъстваме в социалните медии?' =>
+			[87, 'Христомир', 'Витанов', 2018],
+		'Еп084 | Екипът в основата на успеха - историята на Александър Сумин и ClaimCompass' =>
+			[84, 'Александър', 'Сумин', 2018],
+		'Еп078 | Да бъдеш в хармония с това, което имаш тук и сега с Евгения Пеева-Кирова' =>
+			[78, 'Евгения', 'Пеева-Кирова', 2018],
+		'Еп069 | За музиката като начин на изразяване със Станислав „Спенс“ Найденов' =>
+			[69, 'Станислав', 'Найденов', 2017],
+		'Еп019 | Как една похвала преобръща живота на Виктория "Goldy" Димитрова' =>
+			[19, 'Виктория', 'Димитрова', 2017],
+		'Еп005 | Как да превръщаме нещата в реалност с Преслав "Aethelthryth" Иванов' =>
+			[5, 'Преслав', 'Иванов', 2016],
+	];
+
+	private array $names = [];
+
+	function __destruct()
+	{
+		file_put_contents(
+			self::localStats,
+			json_encode($this->names, \JSON_UNESCAPED_UNICODE | \JSON_PRETTY_PRINT)
+		);
+	}
+
+	function download(): self
+	{
+		// $fromURL = self::feedURL;
+		// $asLocalFile = self::localFeed;
+		//
+		// exec("curl '{$fromURL}' -o '{$asLocalFile}'");
+
+		return $this;
+	}
+
+	function parse(): self
+	{
+		$xml = simplexml_load_file(self::localFeed);
+		foreach ($xml->channel->item as $item)
+		{
+			$title = (string) $item->title;
+			if (!$this->isPodcastEpisode($title))
+			{
+				continue;
+			}
+
+			$found = false;
+			foreach (self::regExps as $regex)
+			{
+				if (preg_match($regex, $title, $matches))
+				{
+					$found = true;
+					$this->names[] = [
+						(int) $matches['episodeNumber'],
+						$matches['firstName'],
+						$matches['lastName'],
+						(int) gmdate('Y', strToTime($item->pubDate))
+					];
+				}
+			}
+
+			if (array_key_exists($title, self::hardToParseNames))
+			{
+				$found = true;
+				$this->names[] = self::hardToParseNames[$title];
+			}
+
+			if ('Еп010 | За инициативите на Аз Мога - Тук и Сега с Константин и Алекса' == $title)
+			{
+				$found = true;
+				$this->names[] = [10, 'Константин', 'Рачев', 2016];
+				$this->names[] = [10, 'Алекса', 'Тачев', 2016];
+			}
+
+			if ('Еп067 | Супер Продуктивност със Зорница Стефанова и Силвина Фурнаджиева' == $title)
+			{
+				$found = true;
+				$this->names[] = [67, 'Зорница', 'Стефанова', 2017];
+				$this->names[] = [67, 'Силвина', 'Фурнаджиева', 2017];
+			}
+
+			if (!$found)
+			{
+				var_dump($title);
+			}
+		}
+
+		return $this;
+	}
+
+	private function isPodcastEpisode(string $title): bool
+	{
+		return 0 === strpos($title, 'Еп');
+	}
+
+})->download()->parse();
