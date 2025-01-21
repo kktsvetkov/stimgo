@@ -67,10 +67,10 @@
 
 	function download(): self
 	{
-		// $fromURL = self::feedURL;
-		// $asLocalFile = self::localFeed;
-		//
-		// exec("curl '{$fromURL}' -o '{$asLocalFile}'");
+		$fromURL = self::feedURL;
+		$asLocalFile = self::localFeed;
+
+		exec("curl '{$fromURL}' -o '{$asLocalFile}'");
 
 		return $this;
 	}
