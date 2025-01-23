@@ -3,20 +3,20 @@
 # StImGo = Statistika za Imenata na Gostite
 
 (new class() {
-	const feedURL = 'https://feeds.soundcloud.com/users/soundcloud:users:234169782/sounds.rss';
+	const FEED_URL = 'https://feeds.soundcloud.com/users/soundcloud:users:234169782/sounds.rss';
 
-	const localFeed = 'feed.xml';
+	const LOCAL_FEED_FILE = 'feed.xml';
 
-	const localStats = 'stats.json';
+	const PATH_TO_STATS_FILE = 'html/stats.json';
 
-	private const regExps = [
+	private const REGEXPS = [
 		'~^Еп(?<episodeNumber>\d+) \| ( )?(Проф\. )?(д\-р )?(?<firstName>\w+) (?<lastName>\w+)\: ~u',
 		'~^Еп(?<episodeNumber>\d+) \| (?<firstName>\w+) (?<lastName>\w+) \- .+\: ~u',
 		'~^Еп(?<episodeNumber>\d+) \| (?<firstName>\w+) (?<lastName>\w+\-\w+)\: ~u',
 		'~^Еп(?<episodeNumber>\d+) \| .+ (?:с|със) (?<firstName>\w+) (?<lastName>\w+)$~u',
 	];
 
-	private const hardToParseNames = [
+	private const HARD_TO_PARSE_EPISODES = [
 		'Еп410 | EN | Dr. Menis Yousry: Nothing in life can be forced!' =>
 			[410, 'Менис', 'Юсри', 2024],
 		'Еп384 | EN | Robert Vlach: Share what you know with others!' =>
@@ -41,8 +41,6 @@
 			[118, 'Калин', 'Даскалов', 2019],
 		'Еп093 | EN | Mario Tomic: There is only ONE shortcut to your success' =>
 			[93, 'Марио', 'Томич', 2018],
-		'Еп087 | Христомир Витанов “Мъро“: Колко лесно и важно е да присъстваме в социалните медии?' =>
-			[87, 'Христомир', 'Витанов', 2018],
 		'Еп084 | Екипът в основата на успеха - историята на Александър Сумин и ClaimCompass' =>
 			[84, 'Александър', 'Сумин', 2018],
 		'Еп078 | Да бъдеш в хармония с това, което имаш тук и сега с Евгения Пеева-Кирова' =>
@@ -60,15 +58,15 @@
 	function __destruct()
 	{
 		file_put_contents(
-			self::localStats,
-			json_encode($this->names, \JSON_UNESCAPED_UNICODE | \JSON_PRETTY_PRINT)
+			self::PATH_TO_STATS_FILE,
+			json_encode($this->names, \JSON_UNESCAPED_UNICODE /*| \JSON_PRETTY_PRINT*/)
 		);
 	}
 
 	function download(): self
 	{
-		$fromURL = self::feedURL;
-		$asLocalFile = self::localFeed;
+		$fromURL = self::FEED_URL;
+		$asLocalFile = self::LOCAL_FEED_FILE;
 
 		exec("curl '{$fromURL}' -o '{$asLocalFile}'");
 
@@ -77,7 +75,7 @@
 
 	function parse(): self
 	{
-		$xml = simplexml_load_file(self::localFeed);
+		$xml = simplexml_load_file(self::LOCAL_FEED_FILE);
 		foreach ($xml->channel->item as $item)
 		{
 			$title = (string) $item->title;
@@ -87,7 +85,7 @@
 			}
 
 			$found = false;
-			foreach (self::regExps as $regex)
+			foreach (self::REGEXPS as $regex)
 			{
 				if (preg_match($regex, $title, $matches))
 				{
@@ -103,10 +101,10 @@
 				}
 			}
 
-			if (array_key_exists($title, self::hardToParseNames))
+			if (array_key_exists($title, self::HARD_TO_PARSE_EPISODES))
 			{
 				$found = true;
-				$this->addToNames(...self::hardToParseNames[$title]);
+				$this->addToNames(...self::HARD_TO_PARSE_EPISODES[$title]);
 			}
 
 			if ('Еп010 | За инициативите на Аз Мога - Тук и Сега с Константин и Алекса' == $title)
