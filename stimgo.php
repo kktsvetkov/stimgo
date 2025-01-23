@@ -7,7 +7,7 @@
 
 	const LOCAL_FEED_FILE = 'feed.xml';
 
-	const PATH_TO_STATS_FILE = 'html/stats.json';
+	const PATH_TO_STATS_FILE = 'html/stats.js';
 
 	private const REGEXPS = [
 		'~^Еп(?<episodeNumber>\d+) \| ( )?(Проф\. )?(д\-р )?(?<firstName>\w+) (?<lastName>\w+)\: ~u',
