@@ -55,19 +55,12 @@
 
 	private array $names = [];
 
-	function __destruct()
-	{
-		file_put_contents(
-			self::PATH_TO_STATS_FILE,
-			json_encode($this->names, \JSON_UNESCAPED_UNICODE /*| \JSON_PRETTY_PRINT*/)
-		);
-	}
-
 	function download(): self
 	{
+		echo '[1] Downloading ', self::FEED_URL, "\n";
+
 		$fromURL = self::FEED_URL;
 		$asLocalFile = self::LOCAL_FEED_FILE;
-
 		exec("curl '{$fromURL}' -o '{$asLocalFile}'");
 
 		return $this;
@@ -75,7 +68,9 @@
 
 	function parse(): self
 	{
+		echo '[2] Parsing ', self::LOCAL_FEED_FILE, "\n";
 		$xml = simplexml_load_file(self::LOCAL_FEED_FILE);
+
 		foreach ($xml->channel->item as $item)
 		{
 			$title = (string) $item->title;
@@ -130,6 +125,29 @@
 		return $this;
 	}
 
+	function save(): self
+	{
+		echo '[3] Saving ', self::PATH_TO_STATS_FILE, "\n";
+
+		file_put_contents(
+			self::PATH_TO_STATS_FILE,
+			json_encode($this->names, \JSON_UNESCAPED_UNICODE /*| \JSON_PRETTY_PRINT*/)
+		);
+
+		return $this;
+	}
+
+	function push(): self
+	{
+		echo '[3] Pushing ', "\n";
+
+		exec('git add ' . self::LOCAL_FEED_FILE);
+		exec('git add ' . self::PATH_TO_STATS_FILE);
+		exec('git commit -m "Updating statistics"');
+
+		return $this;
+	}
+
 	private function isPodcastEpisode(string $title): bool
 	{
 		return 0 === strpos($title, 'Еп');
@@ -140,4 +158,4 @@
 		$this->names[] = [$episodeNumber, $firstName, $lastName, $year];
 	}
 
-})->download()->parse();
+})->download()->parse()->save()->push();
