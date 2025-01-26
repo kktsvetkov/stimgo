@@ -56,6 +56,10 @@ onload = () => {
 
 	const root = document.getElementById('chart');
 
+	const render_nav = (json) => {
+		return json
+	}
+
 	const render_chart = (json, src, chart) => {
 		const stats = sort(json, src);
 		switch (chart)
@@ -146,6 +150,6 @@ onload = () => {
 
 	fetch('./stats.js')
 	    .then((response) => response.json())
-	    .then((json) => stats = json)
+	    .then((json) => render_nav(json))
 	    .then((json) => render_chart(json, 2, 0));
 }
