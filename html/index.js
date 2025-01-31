@@ -1,27 +1,10 @@
 onload = () => {
-	const colors = [
-		'#db843d', '#92a8cd', '#a47d7c', '#058dc7', '#50b432', '#ed561b', '#24cbe5', '#64e572',
-		'#ff9655', '#d6cb54', '#6af9c4', '#b5ca92', '#2f7ed8', '#5c40de', '#8bbc21', '#910000',
-		'#1aadce', '#492970', '#f28f43', '#77a1e5', '#c42525', '#a6c96a', '#db843d', '#92a8cd',
-		'#a47d7c', '#058dc7', '#50b432', '#ed561b', '#24cbe5', '#64e572', '#ff9655', '#d6cb54',
-		'#6af9c4', '#b5ca92', '#2f7ed8', '#5c40de', '#8bbc21', '#910000', '#1aadce', '#492970',
-		'#f28f43', '#77a1e5', '#c42525', '#a6c96a', '#db843d', '#92a8cd', '#a47d7c', '#058dc7',
-		'#50b432', '#ed561b', '#24cbe5', '#64e572', '#ff9655', '#d6cb54', '#6af9c4', '#b5ca92',
-		'#2f7ed8', '#5c40de', '#8bbc21', '#910000', '#1aadce', '#492970', '#f28f43', '#77a1e5'
-		];
 
-	const guess_color = (background) => {
-		const rgb = background.match(/\d+/g)
-		return ((parseInt(rgb[0], 16)*0.299)
-				+(parseInt(rgb[1], 16)*0.587)
-				+(parseInt(rgb[2], 16)*0.114)
-			>314)
-			? 'black'
-			: 'white'
-	}
+	const SRC_ALL = 0, SRC_FIRST = 1, SRC_LAST = 2, SRC_LAST_COMBINED = 3;
 
 	const sort = (json, src) => {
 		let stats = [], names = []
+
 		const to_stats = (name, item) => {
 
 			if (-1 == names.indexOf(name))
@@ -33,15 +16,26 @@ onload = () => {
 			stats[index] = stats[index] ?? {name: name, items: []}
 			stats[index].items.push(item)
 		}
+
+		const to_stats_combined = (name, item) => {
+			let key = name;
+			key = key.replace(/ова?$/, 'oв(а)');
+			key = key.replace(/ева?$/, 'eв(а)');
+			key = key.replace(/(ски|ска)$/, 'ск(и/а)');
+
+			to_stats(key, item)
+		}
+
 		json.map((item) => {
 			let episode, first, last, year;
 			[episode, first, last, year] = item;
 
 			switch (src)
 			{
-				case 0: return to_stats(first, item) || to_stats(last, item);
-				case 1: return to_stats(first, item);
-				case 2: return to_stats(last, item);
+				case SRC_ALL: return to_stats(first, item) || to_stats(last, item);
+				case SRC_FIRST: return to_stats(first, item);
+				case SRC_LAST: return to_stats(last, item);
+				case SRC_LAST_COMBINED: return to_stats_combined(last, item);
 			}
 		})
 
@@ -116,10 +110,13 @@ onload = () => {
 			const size = Math.ceil(parseInt((a * item.items.length + b) * 10, 10) / 10);
 			span.style.fontSize = size + 'px'
 
-			span.style.backgroundColor = colors[ i % colors.length ]
-			span.style.color = guess_color(span.style.backgroundColor)
+			span.className = 'btn btn-info'
 
-			span.innerHTML = item.name + '(' + item.items.length + ';' + size + ')'
+			span.innerHTML = item.name
+				+ ' <span class="badge rounded-pill text-bg-dark">'
+				+ item.items.length
+				+ '</span>'
+
 			chart.appendChild( span )
 			chart.appendChild( document.createTextNode(' ') )
 		})
@@ -151,5 +148,5 @@ onload = () => {
 	fetch('./stats.js')
 	    .then((response) => response.json())
 	    .then((json) => render_nav(json))
-	    .then((json) => render_chart(json, 2, 0));
+	    .then((json) => render_chart(json, SRC_LAST_COMBINED, 0));
 }
