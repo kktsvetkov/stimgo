@@ -1,27 +1,37 @@
 onload = () => {
 
-	const SRC_ALL = 0, SRC_FIRST = 1, SRC_LAST = 2, SRC_LAST_COMBINED = 3;
+	const SRC_ALL = 0, SRC_FIRST = 1, SRC_LAST = 2, SRC_FAMILY = 3, SRC_FULL = 4;
+	const CHART_TAG_LIST = 0, CHART_TAG_CLOUD = 1;
 
 	const sort = (json, src) => {
 		let stats = [], names = []
 
 		const to_stats = (name, item) => {
-
 			if (-1 == names.indexOf(name))
 			{
 				names.push(name);
 			}
-			let index = names.indexOf(name)
+
+			const index = names.indexOf(name)
 
 			stats[index] = stats[index] ?? {name: name, items: []}
 			stats[index].items.push(item)
 		}
 
-		const to_stats_combined = (name, item) => {
-			let key = name;
-			key = key.replace(/ова?$/, 'oв(а)');
-			key = key.replace(/ева?$/, 'eв(а)');
-			key = key.replace(/(ски|ска)$/, 'ск(и/а)');
+		const to_stats_family = (name, item) => {
+			if (-1 !== name.indexOf('-'))
+			{
+				name.split('-').map((chunk) => {
+					to_stats_family(chunk, item)
+				})
+
+				return;
+			}
+
+			const key = name
+				.replace(/ова?$/, 'oви')
+				.replace(/ева?$/, 'eви')
+				.replace(/(ски|ска)$/, 'ски')
 
 			to_stats(key, item)
 		}
@@ -32,10 +42,17 @@ onload = () => {
 
 			switch (src)
 			{
-				case SRC_ALL: return to_stats(first, item) || to_stats(last, item);
-				case SRC_FIRST: return to_stats(first, item);
-				case SRC_LAST: return to_stats(last, item);
-				case SRC_LAST_COMBINED: return to_stats_combined(last, item);
+				case SRC_ALL:
+					return to_stats(first, item) || to_stats(last, item);
+
+				case SRC_FIRST:
+					return to_stats(first, item);
+
+				case SRC_LAST:
+					return to_stats(last, item);
+
+				case SRC_FAMILY:
+					return to_stats_family(last, item);
 			}
 		})
 
@@ -48,7 +65,7 @@ onload = () => {
 		});
 	}
 
-	const root = document.getElementById('chart');
+	const root = document.getElementById('chart')
 
 	const render_nav = (json) => {
 		return json
@@ -58,7 +75,11 @@ onload = () => {
 		const stats = sort(json, src);
 		switch (chart)
 		{
-			case 0: return render_tag_cloud(stats);
+			case CHART_TAG_LIST:
+				return render_tag_list(stats)
+
+			case CHART_TAG_CLOUD:
+				return render_tag_cloud(stats)
 		}
 	};
 
@@ -71,9 +92,10 @@ onload = () => {
 			+ '</div>';
 	};
 
-	const render_tag_cloud = (stats) => {
-		const min_font = 13
-		const max_font = 40
+	const compose_tag_list = (stats, options) => {
+
+		const min_font = options.min_font || 13
+		const max_font = options.max_font || 40
 
 		const chart = document.createElement('div')
 
@@ -102,7 +124,6 @@ onload = () => {
 
 		const a = (max_font - min_font) / (max - min);
 	        const b = min_font - (min * a);
-	        console.log('minWeight: '+min+', maxWeight: '+max+', a: '+a+', b: '+b);
 
 		stats.map((item, i) => {
 			const span = document.createElement('span')
@@ -110,16 +131,76 @@ onload = () => {
 			const size = Math.ceil(parseInt((a * item.items.length + b) * 10, 10) / 10);
 			span.style.fontSize = size + 'px'
 
-			span.className = 'btn btn-info'
+			span.className = 'stigmo-tag btn btn-info m-1'
 
 			span.innerHTML = item.name
-				+ ' <span class="badge rounded-pill text-bg-dark">'
+				+ '<span class="badge rounded-pill text-bg-dark ms-1">'
 				+ item.items.length
 				+ '</span>'
 
 			chart.appendChild( span )
-			chart.appendChild( document.createTextNode(' ') )
 		})
+
+		return chart;
+	}
+
+	const render_tag_list = (stats) => {
+		const chart = compose_tag_list(stats, {min_font: 13, max_font: 40})
+
+		render_resize(chart, '')
+	}
+
+	const render_tag_cloud = (stats) => {
+
+		const chart = compose_tag_list(stats, {min_font: 13, max_font: 40})
+		const tags = Array.from(chart.getElementsByClassName('stigmo-tag'))
+
+		let width = 0
+	        const padding = 11;
+	        let containerPadding = 0;
+		const containerPaddingRate = 1.00145
+		const containerWidth = chart.offsetWidth
+
+		const table = document.createElement('table');
+		let tr = document.createElement('tr')
+		table.appendChild(tr)
+		let td = document.createElement('td')
+		tr.appendChild(td)
+		td.setAttribute('align', 'center')
+		// td.setAttribute('vertical-align', 'middle')
+
+		tags.map((item) => {
+			if (width + item.offsetWidth + padding >= containerWidth - containerPadding)
+			{
+				td = document.createElement('td')
+				td.setAttribute('align', 'center')
+
+				let nr = document.createElement('tr')
+				nr.appendChild(td)
+
+				if(1 || table.childNodes.length %2)
+				{
+					// td.setAttribute('vertical-align', 'bottom')
+					table.appendChild(nr)
+				} else {
+					// td.setAttribute('vertical-align', 'top')
+					table.insertBefore(nr, table.firstChild)
+				}
+
+				tr = nr;
+
+				containerPadding = containerPadding * containerPaddingRate + padding
+				width = 0
+	                }
+
+			width = width + item.offsetWidth + padding;
+
+			td.childNodes.length %2
+				? td.appendChild(item)
+				: td.insertBefore(item, td.firstChild)
+		})
+
+		chart.appendChild(table);
 
 		render_resize(chart, '')
 	}
@@ -148,5 +229,5 @@ onload = () => {
 	fetch('./stats.js')
 	    .then((response) => response.json())
 	    .then((json) => render_nav(json))
-	    .then((json) => render_chart(json, SRC_LAST_COMBINED, 0));
+	    .then((json) => render_chart(json, SRC_FAMILY, CHART_TAG_CLOUD));
 }
