@@ -67,12 +67,79 @@ onload = () => {
 
 	const root = document.getElementById('chart')
 
+	let nav = {src: SRC_FAMILY, chart: CHART_TAG_CLOUD, year: -1}
+
+	const set_dropdown_title = (el, label, current) => {
+		el.innerHTML = label + ': <strong>' + current + '</strong>'
+	}
+
+	const click_nav = (json, button, index, target, label) => {
+		button.parentNode.parentNode.childNodes[ nav[target] ].firstChild.className = button.className
+		button.className += ' active'
+
+		set_dropdown_title(
+			button.parentNode.parentNode.parentNode.firstChild,
+			label,
+			button.innerHTML
+		)
+
+		nav[target] = index
+
+		render_loading();
+		setTimeout(() => render_chart(json, nav.src, nav.chart), 400)
+	}
+
+	const compose_nav = (label, current, options, target, json) => {
+		const li = document.createElement('li')
+		li.className = 'nav-item dropdown'
+
+		const selected = document.createElement('a')
+		selected.className = 'nav-link dropdown-toggle'
+		selected.setAttribute('data-bs-toggle', 'dropdown')
+		selected.setAttribute('role', 'button')
+		selected.setAttribute('aria-expanded', 'false')
+		li.appendChild(selected)
+		set_dropdown_title(selected, label, options[current] || '💩')
+
+		const ul = document.createElement('ul')
+		ul.className = 'dropdown-menu'
+		li.appendChild(ul)
+
+		options.map((option, index) => {
+			const command = document.createElement('button')
+			command.type = 'button'
+			command.className = 'dropdown-item' + (index == current ? ' active' : '')
+			command.innerHTML = option
+			command.addEventListener(
+				'click',
+				(e) => click_nav(json, command, index, target, label)
+			)
+
+			const li = document.createElement('li')
+			li.appendChild(command)
+
+			ul.appendChild(li)
+		})
+
+		new bootstrap.Dropdown(selected)
+
+		return li
+	}
+
 	const render_nav = (json) => {
+
+		const control = document.getElementById('control')
+
+		let name_options = ['Лични + Фамилни', 'Лични имена', 'Фамилни имена', 'Фамилии']
+		control.appendChild( compose_nav('Имена', SRC_FAMILY, name_options, 'src', json) )
+		// control.replaceChildren(document.createTextNode('*'));
+
 		return json
 	}
 
+	let sorted = []
 	const render_chart = (json, src, chart) => {
-		const stats = sort(json, src);
+		const stats = sort(json, src)
 		switch (chart)
 		{
 			case CHART_TAG_LIST:
@@ -229,5 +296,5 @@ onload = () => {
 	fetch('./stats.js')
 	    .then((response) => response.json())
 	    .then((json) => render_nav(json))
-	    .then((json) => render_chart(json, SRC_FAMILY, CHART_TAG_CLOUD));
+	    .then((json) => render_chart(json, nav.src, nav.chart))
 }
