@@ -153,7 +153,7 @@ onload = () => {
 		document.getElementById('control').replaceChildren(
 			compose_nav('Имена', nav.src, src_options, 'src', json),
 			compose_nav('Години', nav.year, year_options, 'year', json),
-			compose_nav('Графика', nav.chart, chart_options, 'chart', json)
+			compose_nav('Представяне', nav.chart, chart_options, 'chart', json)
 		);
 
 		return json
