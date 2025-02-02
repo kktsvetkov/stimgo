@@ -1,9 +1,9 @@
 onload = () => {
 
-	const SRC_ALL = 0, SRC_FIRST = 1, SRC_LAST = 2, SRC_FAMILY = 3, SRC_FULL = 4;
+	const SRC_FIRST = 0, SRC_LAST = 1, SRC_ALL = 2, SRC_FAMILY = 3;
 	const CHART_TAG_LIST = 0, CHART_TAG_CLOUD = 1;
 
-	const sort = (json, src) => {
+	const sort = (json, src, ago) => {
 		let stats = [], names = []
 
 		const to_stats = (name, item) => {
@@ -40,6 +40,15 @@ onload = () => {
 			let episode, first, last, year;
 			[episode, first, last, year] = item;
 
+			if (0 != ago)
+			{
+				const max_year = json[0][3], selected_year = max_year -ago
+				if (year > selected_year)
+				{
+					return;
+				}
+			}
+
 			switch (src)
 			{
 				case SRC_ALL:
@@ -67,26 +76,21 @@ onload = () => {
 
 	const root = document.getElementById('chart')
 
-	let nav = {src: SRC_FAMILY, chart: CHART_TAG_CLOUD, year: -1}
+	let nav = {src: SRC_ALL, chart: CHART_TAG_LIST, year: 0}
 
-	const set_dropdown_title = (el, label, current) => {
-		el.innerHTML = label + ': <strong>' + current + '</strong>'
+	const reset_nav = (button, label) => {
+		[...button.parentNode.parentNode.childNodes].map((el) => {
+			el.firstChild.className = el.firstChild.className.replace('active', '')
+		})
+
+		button.className += ' active'
+		button.parentNode.parentNode.parentNode.firstChild.innerHTML =
+			label + ': <strong>' + button.innerHTML + '</strong>'
 	}
 
-	const click_nav = (json, button, index, target, label) => {
-		button.parentNode.parentNode.childNodes[ nav[target] ].firstChild.className = button.className
-		button.className += ' active'
-
-		set_dropdown_title(
-			button.parentNode.parentNode.parentNode.firstChild,
-			label,
-			button.innerHTML
-		)
-
+	const click_nav = (json, index, target) => {
 		nav[target] = index
-
-		render_loading();
-		setTimeout(() => render_chart(json, nav.src, nav.chart), 400)
+		render_loading(() => render_chart(json, nav.src, nav.chart, nav.year));
 	}
 
 	const compose_nav = (label, current, options, target, json) => {
@@ -99,26 +103,37 @@ onload = () => {
 		selected.setAttribute('role', 'button')
 		selected.setAttribute('aria-expanded', 'false')
 		li.appendChild(selected)
-		set_dropdown_title(selected, label, options[current] || '💩')
 
 		const ul = document.createElement('ul')
 		ul.className = 'dropdown-menu'
 		li.appendChild(ul)
 
+		let offset = 0;
 		options.map((option, index) => {
+
+			if ('' == option)
+			{
+				const li = document.createElement('li')
+				li.innerHTML = '<hr class="dropdown-divider" />'
+
+				++offset
+				return ul.appendChild(li)
+			}
+
+			const key = index - offset
 			const command = document.createElement('button')
 			command.type = 'button'
-			command.className = 'dropdown-item' + (index == current ? ' active' : '')
+			command.className = 'dropdown-item'
 			command.innerHTML = option
-			command.addEventListener(
-				'click',
-				(e) => click_nav(json, command, index, target, label)
-			)
+			command.addEventListener('click', () =>
+				reset_nav(command, label) || click_nav(json, key, target))
 
-			const li = document.createElement('li')
-			li.appendChild(command)
+			ul.appendChild(document.createElement('li')).appendChild(command)
 
-			ul.appendChild(li)
+			if (key == current)
+			{
+				reset_nav(command, label)
+			}
 		})
 
 		new bootstrap.Dropdown(selected)
@@ -127,19 +142,25 @@ onload = () => {
 	}
 
 	const render_nav = (json) => {
+		const max_year = json[0][3]
+		const min_year = json[json.length-1][3]
+		const years = [...Array(max_year -min_year).keys()].map(i => 'до ' + (i +min_year +1)).reverse()
+		const year_options = ['Всички', ''].concat(years)
 
-		const control = document.getElementById('control')
+		const src_options = ['Лични имена', 'Фамилни имена', '', 'Всички имена', 'Фамилии']
+		const chart_options = ['Списък', 'Облак']
 
-		let name_options = ['Лични + Фамилни', 'Лични имена', 'Фамилни имена', 'Фамилии']
-		control.appendChild( compose_nav('Имена', SRC_FAMILY, name_options, 'src', json) )
-		// control.replaceChildren(document.createTextNode('*'));
+		document.getElementById('control').replaceChildren(
+			compose_nav('Имена', nav.src, src_options, 'src', json),
+			compose_nav('Години', nav.year, year_options, 'year', json),
+			compose_nav('Графика', nav.chart, chart_options, 'chart', json)
+		);
 
 		return json
 	}
 
-	let sorted = []
-	const render_chart = (json, src, chart) => {
-		const stats = sort(json, src)
+	const render_chart = (json, src, chart, year) => {
+		const stats = sort(json, src, year)
 		switch (chart)
 		{
 			case CHART_TAG_LIST:
@@ -150,13 +171,15 @@ onload = () => {
 		}
 	};
 
-	const render_loading = () => {
+	const render_loading = (callback) => {
 		root.style.height = '200px'
 
 		root.className = 'loading d-flex align-items-center justify-content-center'
 		root.innerHTML = '<div class="spinner-border" role="status">'
 			+ '<span class="visually-hidden">Зареждане...</span>'
 			+ '</div>';
+
+		setTimeout(callback, 400)
 	};
 
 	const compose_tag_list = (stats, options) => {
@@ -220,7 +243,7 @@ onload = () => {
 	const render_tag_cloud = (stats) => {
 
 		const chart = compose_tag_list(stats, {min_font: 13, max_font: 40})
-		const tags = Array.from(chart.getElementsByClassName('stigmo-tag'))
+		const tags = [...chart.getElementsByClassName('stigmo-tag')]
 
 		let width = 0
 	        const padding = 11;
@@ -280,7 +303,7 @@ onload = () => {
 		const resize_id = setInterval(() => {
 			if (root.offsetHeight < el.offsetHeight)
 			{
-				root.style.height = (20 + (root.offsetHeight)) + 'px'
+				root.style.height = (50 + (root.offsetHeight)) + 'px'
 				root.scrollTop = Math.max(root.scrollHeight, root.clientHeight) - root.clientHeight;
 				return;
 			}
@@ -291,10 +314,10 @@ onload = () => {
 		}, 10)
 	}
 
-	render_loading();
-
-	fetch('./stats.js')
-	    .then((response) => response.json())
-	    .then((json) => render_nav(json))
-	    .then((json) => render_chart(json, nav.src, nav.chart))
+	render_loading(() => {
+		fetch('./stats.js')
+		    .then((response) => response.json())
+		    .then((json) => render_nav(json))
+		    .then((json) => render_chart(json, nav.src, nav.chart, nav.year))
+	});
 }
