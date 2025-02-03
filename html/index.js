@@ -76,6 +76,43 @@ onload = () => {
 
 	const root = document.getElementById('chart')
 
+	const preview = new bootstrap.Offcanvas('#preview')
+
+	const preview_click = (el, items) => {
+
+		const preview_contents = document.getElementById('preview_contents')
+
+		let html = '<div class="d-grid gap-2">'
+				+ '<button class="btn btn-lg" '
+					+ ' type="button" '
+					+ ' style="background: ' + el.style.backgroundColor + '">'
+					+ el.innerHTML
+				+ '</button>'
+			+ '</div>'
+			+ '<br/>'
+
+		html += '<ul class="list-group">'
+
+		items.reverse().map((item) => {
+			let episode, first, last, year;
+			[episode, first, last, year] = item
+
+			html += '<li class="list-group-item d-flex justify-content-between align-items-start">'
+				+ '<span class="secondary-text me-1">#' + episode + '</span>'
+				+ '<strong class="primary-text">' + first + '</strong>'
+				+ ' '
+				+ '<strong class="primary-text">' + last + '</strong>'
+				+ '<span class="badge text-bg-dark">' + year + '</span>'
+				+ '</li>'
+		})
+
+		html += '</ul>'
+
+		preview_contents.innerHTML = html
+
+		preview.show()
+	}
+
 	const local_nav = JSON.parse(localStorage.getItem('stigmo_nav') || '{"src":2, "chart":0, "year":0}')
 
 	let nav = {
@@ -232,7 +269,6 @@ onload = () => {
 		const chart = document.createElement('div')
 
 		chart.style.width = root.offsetWidth + 'px';
-		chart.style.visibility = 'hidden'
 		document.body.appendChild(chart)
 
 		let min = Number.MAX_SAFE_INTEGER
@@ -291,6 +327,8 @@ onload = () => {
 				+ '</span>'
 
 			chart.appendChild( span )
+
+			span.addEventListener('click', () => preview_click(span, item.items))
 		})
 
 		return chart;
@@ -361,7 +399,7 @@ onload = () => {
 	const render_resize = (el, className) => {
 		root.style.overflow = 'hidden';
 		root.className = className
-		root.innerHTML = el.innerHTML
+		root.replaceChildren(el)
 
 		const resize_id = setInterval(() => {
 			if (root.offsetHeight < el.offsetHeight)
@@ -372,7 +410,6 @@ onload = () => {
 			}
 
 			root.style.overflow = ''
-			document.body.removeChild(el);
 			clearInterval(resize_id)
 		}, 10)
 	}
