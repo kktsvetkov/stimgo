@@ -76,7 +76,19 @@ onload = () => {
 
 	const root = document.getElementById('chart')
 
-	let nav = {src: SRC_ALL, chart: CHART_TAG_LIST, year: 0}
+	const local_nav = JSON.parse(localStorage.getItem('stigmo_nav') || '{"src":2, "chart":0, "year":0}')
+
+	let nav = {
+		src: typeof local_nav.src == 'number'
+		 	? local_nav.src
+			: SRC_ALL,
+
+		chart: typeof local_nav.chart == 'number'
+			? local_nav.chart
+			: CHART_TAG_LIST,
+
+		year: local_nav.year || 0
+	}
 
 	const reset_nav = (button, label) => {
 		[...button.parentNode.parentNode.childNodes].map((el) => {
@@ -89,7 +101,10 @@ onload = () => {
 	}
 
 	const click_nav = (json, index, target) => {
+
 		nav[target] = index
+		localStorage.setItem('stigmo_nav', JSON.stringify(nav));
+
 		render_loading(() => render_chart(json, nav.src, nav.chart, nav.year));
 	}
 
@@ -182,6 +197,33 @@ onload = () => {
 		setTimeout(callback, 400)
 	};
 
+	const generate_color_steps = (color_start, color_end, steps) => {
+		const dummy = document.createElement('div')
+		dummy.style.color = color_start
+		const start = dummy.style.color.match(/[\.\d]+/g)
+
+		dummy.style.backgroundColor = color_end
+		const end = dummy.style.backgroundColor.match(/[\.\d]+/g)
+		dummy.remove()
+
+		let colors = []
+		let alpha = 0, opacity = start[3] * 100
+
+		for (let i = 0; i < steps; i++) {
+			alpha += 1.0 / steps;
+
+			let c = [
+				Math.round(end[0] * alpha + (1 - alpha) * start[0]),
+				Math.round(end[1] * alpha + (1 - alpha) * start[1]),
+				Math.round(end[2] * alpha + (1 - alpha) * start[2])
+			];
+
+			colors.push(`rgb(${c[0]},${c[1]},${c[2]})`)
+		}
+
+		return colors
+	}
+
 	const compose_tag_list = (stats, options) => {
 
 		const min_font = options.min_font || 13
@@ -215,17 +257,37 @@ onload = () => {
 		const a = (max_font - min_font) / (max - min);
 	        const b = min_font - (min * a);
 
+		let values = [], colorsAt = -1, lastValue = 0
+		stats.map((item) => {
+			if (!values.includes(item.items.length))
+			{
+				values.push(item.items.length)
+			}
+		})
+
+		const colorsBreakpoint = values.length -3
+		const colors = []
+			.concat( generate_color_steps('#acfa70', '#0dcaf0', colorsBreakpoint) )
+			.concat( generate_color_steps('#0dcaf0', '#f74597', values.length -colorsBreakpoint) )
+
 		stats.map((item, i) => {
+			const value = item.items.length
 			const span = document.createElement('span')
 
 			const size = Math.ceil(parseInt((a * item.items.length + b) * 10, 10) / 10);
 			span.style.fontSize = size + 'px'
 
-			span.className = 'stigmo-tag btn btn-info m-1'
+			span.className = 'stigmo-tag btn m-1'
+			if (value != lastValue)
+			{
+				lastValue = value
+				colorsAt++
+			}
+			span.style.backgroundColor = colors[colorsAt]
 
 			span.innerHTML = item.name
 				+ '<span class="badge rounded-pill text-bg-dark ms-1">'
-				+ item.items.length
+				+ value
 				+ '</span>'
 
 			chart.appendChild( span )
@@ -235,21 +297,23 @@ onload = () => {
 	}
 
 	const render_tag_list = (stats) => {
-		const chart = compose_tag_list(stats, {min_font: 13, max_font: 40})
+		const chart = compose_tag_list(stats, {min_font: 13, max_font: 52})
 
 		render_resize(chart, '')
 	}
 
 	const render_tag_cloud = (stats) => {
 
-		const chart = compose_tag_list(stats, {min_font: 13, max_font: 40})
+		const chart = compose_tag_list(stats, {min_font: 11, max_font: 34})
 		const tags = [...chart.getElementsByClassName('stigmo-tag')]
 
-		let width = 0
-	        const padding = 11;
-	        let containerPadding = 0;
-		const containerPaddingRate = 1.00145
+		const containerPaddingRate = 1.0045
+		const containerPaddingExponent = 1.05
 		const containerWidth = chart.offsetWidth
+	        const contentMargin = 9;
+
+		let containerPadding = 0;
+		let contentWidth = 0
 
 		const table = document.createElement('table');
 		let tr = document.createElement('tr')
@@ -257,33 +321,32 @@ onload = () => {
 		let td = document.createElement('td')
 		tr.appendChild(td)
 		td.setAttribute('align', 'center')
-		// td.setAttribute('vertical-align', 'middle')
+		td.setAttribute('vertical-align', 'middle')
 
 		tags.map((item) => {
-			if (width + item.offsetWidth + padding >= containerWidth - containerPadding)
+			if (contentWidth + item.offsetWidth + contentMargin >= containerWidth - containerPadding)
 			{
-				td = document.createElement('td')
+				td = document.createElement('td');
+				tr = document.createElement('tr');
+
+				(table.childNodes.length %2)
+					? table.appendChild(tr)
+						.appendChild(td)
+						.setAttribute('vertical-align', 'top')
+					: table.insertBefore(tr, table.firstChild)
+						.appendChild(td)
+						.setAttribute('vertical-align', 'bottom')
+
 				td.setAttribute('align', 'center')
 
-				let nr = document.createElement('tr')
-				nr.appendChild(td)
-
-				if(1 || table.childNodes.length %2)
-				{
-					// td.setAttribute('vertical-align', 'bottom')
-					table.appendChild(nr)
-				} else {
-					// td.setAttribute('vertical-align', 'top')
-					table.insertBefore(nr, table.firstChild)
-				}
-
-				tr = nr;
-
-				containerPadding = containerPadding * containerPaddingRate + padding
-				width = 0
+				containerPadding = containerPadding
+					* containerPaddingRate
+					** containerPaddingExponent
+					+ contentMargin
+				contentWidth = 0
 	                }
 
-			width = width + item.offsetWidth + padding;
+			contentWidth += item.offsetWidth + contentMargin;
 
 			td.childNodes.length %2
 				? td.appendChild(item)
