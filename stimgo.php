@@ -144,6 +144,7 @@
 		exec('git add ' . self::LOCAL_FEED_FILE);
 		exec('git add ' . self::PATH_TO_STATS_FILE);
 		exec('git commit -m "Updating statistics"');
+		exec('git push');
 
 		return $this;
 	}
