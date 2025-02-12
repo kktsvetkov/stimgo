@@ -1,7 +1,5 @@
 <?php
 
-# StImGo = Statistika za Imenata na Gostite
-
 (new class() {
 	const FEED_URL = 'https://feeds.soundcloud.com/users/soundcloud:users:234169782/sounds.rss';
 
@@ -11,9 +9,11 @@
 
 	private const REGEXPS = [
 		'~^Еп(?<episodeNumber>\d+) \| ( )?(Проф\. )?(д\-р )?(?<firstName>\w+) (?<lastName>\w+)\: ~u',
+		'~^Eп(?<episodeNumber>\d+) \| (?<firstName>\w+) (?<lastName>\w+)\: ~u',
 		'~^Еп(?<episodeNumber>\d+) \| (?<firstName>\w+) (?<lastName>\w+) \- .+\: ~u',
 		'~^Еп(?<episodeNumber>\d+) \| (?<firstName>\w+) (?<lastName>\w+\-\w+)\: ~u',
 		'~^Еп(?<episodeNumber>\d+) \| .+ (?:с|със) (?<firstName>\w+) (?<lastName>\w+)$~u',
+		'~\| (?<firstName>\w+) (?<lastName>\w+) \| Еп(?<episodeNumber>\d+)$~u',
 	];
 
 	private const HARD_TO_PARSE_EPISODES = [
@@ -23,6 +23,8 @@
 			[384, 'Робърт', 'Влах', 2024],
 		'Еп377 | EN | Moritz Zimmermann: Be ambitious. Be curious. Feel challenged.' =>
 			[377, 'Мориц', 'Цимърман', 2023],
+		'Eп269 | EN | Adrien Bacchi: I am grateful to Bulgaria because this is where it happened!' =>
+			[269, 'Адриен', 'Баки', 2021],
 		'Еп244 | EN | Peter Sage: The Questions are the Steering Wheel of the Mind' =>
 			[244, 'Питър', 'Сейдж', 2021],
 		'Еп230 | EN | Dennis Sheperd: Be patient and positive and the sunrise will come' =>
@@ -156,7 +158,16 @@
 
 	private function isPodcastEpisode(string $title): bool
 	{
-		return 0 === strpos($title, 'Еп');
+		return !preg_match('~' . join('|', [
+			'^LongevIT',
+			'^На живо',
+			'^Свръхчовекът на гости',
+			'^Еп018 \| Как и защо създадох Свръхчовекът с Георги Ненов',
+			'^Еп088 \| Георги Ненов\: Миналото и Бъдещето на Свръхчовекът',
+			'^Еп070 \| Свръхчовешките уроци на 2017 с Георги Ненов',
+			]) .'~u',
+			$title
+		);
 	}
 
 	private function addToNames(int $episodeNumber, string $firstName, string $lastName, int $year)
