@@ -55,6 +55,11 @@
 
 	private array $names = [];
 
+	function __construct()
+	{
+		chdir(__DIR__);
+	}
+
 	function download(): self
 	{
 		echo '[1] Downloading ', self::FEED_URL, "\n";
