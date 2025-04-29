@@ -14,6 +14,8 @@
 		'~^Еп(?<episodeNumber>\d+) \| (?<firstName>\w+) (?<lastName>\w+\-\w+)\: ~u',
 		'~^Еп(?<episodeNumber>\d+) \| .+ (?:с|със) (?<firstName>\w+) (?<lastName>\w+)$~u',
 		'~\| (?<firstName>\w+) (?<lastName>\w+) \| Еп(?<episodeNumber>\d+)$~u',
+		'~\| (?<firstName>\w+) (?<lastName>\w+) от .+ \| Еп(?<episodeNumber>\d+)$~u',
+		'~^(?<firstName>\w+) (?<lastName>\w+)\:.+\| Еп(?<episodeNumber>\d+)$~u',
 	];
 
 	private const HARD_TO_PARSE_EPISODES = [
@@ -165,6 +167,10 @@
 			'^Еп018 \| Как и защо създадох Свръхчовекът с Георги Ненов',
 			'^Еп088 \| Георги Ненов\: Миналото и Бъдещето на Свръхчовекът',
 			'^Еп070 \| Свръхчовешките уроци на 2017 с Георги Ненов',
+
+			'Бонус Епизод',
+			'^Новогодишно Пожелание \| 2018',
+			'Статия\d+ \|',
 			]) .'~u',
 			$title
 		);
