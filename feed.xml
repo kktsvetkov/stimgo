@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
       <channel>
         <atom:link href="https://feeds.soundcloud.com/users/soundcloud:users:234169782/sounds.rss" rel="self" type="application/rss+xml"/>
-        <atom:link href="https://feeds.soundcloud.com/users/soundcloud:users:234169782/sounds.rss?before=293444613" rel="next" type="application/rss+xml"/>
+        <atom:link href="https://feeds.soundcloud.com/users/soundcloud:users:234169782/sounds.rss?before=294544106" rel="next" type="application/rss+xml"/>
         <title>Свръхчовекът: как да живеем живота на мечтите си</title>
         <link>https://thesuperhumanpodcast.net/podkrepi</link>
-        <pubDate>Thu, 23 Oct 2025 13:35:24 +0000</pubDate>
-        <lastBuildDate>Thu, 23 Oct 2025 13:35:24 +0000</lastBuildDate>
+        <pubDate>Sat, 01 Nov 2025 17:34:54 +0000</pubDate>
+        <lastBuildDate>Sat, 01 Nov 2025 17:34:54 +0000</lastBuildDate>
         <ttl>60</ttl>
         <language>bg</language>
         <copyright>All rights reserved</copyright>
@@ -29,10 +29,55 @@
         </image>
         <itunes:category text="Education"/>
         <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/2204161231</guid>
+      <title>Еп 474 | Светла Лесова: Колкото по-голям ставаш в бизнеса, толкова по-голяма е мишената на гърба ти</title>
+      <pubDate>Tue, 04 Nov 2025 05:00:18 +0000</pubDate>
+      <link>https://soundcloud.com/thesuperhumanpodcast/thesuperhumanpodcast-episode474</link>
+      <itunes:duration>02:57:43</itunes:duration>
+      <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>🎙️ Светла Лесова е съосновател и изпълнителен директор на Vidas - първите безалкохолни напитки в България, създадени от натурални български билки и плодове, без захар и изкуствени добавки.
+
+🚀Тя е първият гост в Месеца на eCommerce в Свръхчовекът с Георги Ненов, който създадохме с подкрепата на Yotpo.
+
+💼 В разговора сподели за прехода от генерален мениджър на международна корпорация към предприемач, който лично разтоварва камиони и преодолява почти фалит. Светла разказа открито за загубата на цял контейнер в Уганда, първите ферментирали партиди, семейните спестявания, вложени в бизнеса, и как честността към продукта и хората се превръща в основа за устойчив растеж.
+
+💬 &quot;Родителството е като предприемачеството - няма гаранция за резултат и учиш години по-късно дали си свършил добре работата.&quot; ~Светла Лесова
+
+🚀 В този епизод ще научиш:
+✅ Как се преминава от корпоративен свят към собствен бизнес без компромиси?
+✅ Защо честността и автентичността са конкурентно предимство?
+✅ Как се изгражда лоялна общност и дигитално присъствие от нулата?
+✅ Какъв е балансът между предприемачество, родителство и личностно развитие?
+
+💡 История за смисъла на честността, дългосрочното мислене и създаването на продукти, които променят пазара - точно тук, в България.
+
+🙏 Благодарим на партньорите на проекта: Yotpo | StorpoolStorage | HackBulgaria | SuperHosting.BG | LimeChain | Novator | Dynaphos | Aula.bg | Ardes.bg | Decibel | Swipe.bg | Oreshak Handmade | Paysera 🙏</itunes:summary>
+      <itunes:subtitle>🎙️ Светла Лесова е съосновател и изпълнителен ди…</itunes:subtitle>
+      <description>🎙️ Светла Лесова е съосновател и изпълнителен директор на Vidas - първите безалкохолни напитки в България, създадени от натурални български билки и плодове, без захар и изкуствени добавки.
+
+🚀Тя е първият гост в Месеца на eCommerce в Свръхчовекът с Георги Ненов, който създадохме с подкрепата на Yotpo.
+
+💼 В разговора сподели за прехода от генерален мениджър на международна корпорация към предприемач, който лично разтоварва камиони и преодолява почти фалит. Светла разказа открито за загубата на цял контейнер в Уганда, първите ферментирали партиди, семейните спестявания, вложени в бизнеса, и как честността към продукта и хората се превръща в основа за устойчив растеж.
+
+💬 &quot;Родителството е като предприемачеството - няма гаранция за резултат и учиш години по-късно дали си свършил добре работата.&quot; ~Светла Лесова
+
+🚀 В този епизод ще научиш:
+✅ Как се преминава от корпоративен свят към собствен бизнес без компромиси?
+✅ Защо честността и автентичността са конкурентно предимство?
+✅ Как се изгражда лоялна общност и дигитално присъствие от нулата?
+✅ Какъв е балансът между предприемачество, родителство и личностно развитие?
+
+💡 История за смисъла на честността, дългосрочното мислене и създаването на продукти, които променят пазара - точно тук, в България.
+
+🙏 Благодарим на партньорите на проекта: Yotpo | StorpoolStorage | HackBulgaria | SuperHosting.BG | LimeChain | Novator | Dynaphos | Aula.bg | Ardes.bg | Decibel | Swipe.bg | Oreshak Handmade | Paysera 🙏</description>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2204161231-thesuperhumanpodcast-thesuperhumanpodcast-episode474.mp3" length="255989569"/>
+      <itunes:image href="https://i1.sndcdn.com/artworks-9BGkTKbnLoOheptG-IPLGxA-t3000x3000.jpg"/>
+    </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2197123507</guid>
       <title>Еп473 | Мирослав Недялков: Ако всеки от нас създава нещо стойностно, заедно ще постигнем големи неща</title>
       <pubDate>Tue, 28 Oct 2025 05:00:09 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/episode-473</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/thesuperhumanpodcast-episode473</link>
       <itunes:duration>02:43:36</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -95,18 +140,18 @@
 🙌 ‪HackBulgaria развиват общност за софтуерни специалисти и IT хора в България! Стани част от нея от тук: https://bit.ly/JoinHackBulgaria, за да научаваш за предстоящите им инициативи! 
 
 🙏 Благодарим на партньорите на проекта: Yotpo | StorpoolStorage | HackBulgaria | SuperHosting.BG | LimeChain | Novator | Dynaphos | Aula.bg | Ardes.bg | Decibel | Swipe.bg | Oreshak Handmade | Paysera 🙏</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2197123507-thesuperhumanpodcast-episode-473.mp3" length="235680469"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2197123507-thesuperhumanpodcast-thesuperhumanpodcast-episode473.mp3" length="235680469"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-ElEiQN3S1nTeaeRW-CyeVSw-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2178650728</guid>
-      <title>С3Е1 | Свръхчовекът: На Живо | Елена Николова: Човешките отношения са най-важното нещо</title>
+      <title>На живо | Елена Николова: Човешките отношения са най-важното нещо!</title>
       <pubDate>Thu, 23 Oct 2025 13:00:09 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/live-s3e1</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s3e1</link>
       <itunes:duration>01:02:07</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Георги Държанлиев на 25.10.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
-👉 Вземи своя билет: https://bit.ly/tshps3e2
+      <itunes:summary>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Марина Стефанова на 29.11.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
+👉 Вземи своя билет: https://bit.ly/tshps3e3
 
 🎙️ В първия епизод от Сезон 3 се срещнахме с Елена Николова - съосновател на Escreo, ментор, програмен мениджър в Bulgarian Angels Club и двигател зад фондация &quot;Жените в предприемачеството в България&quot; - човек, който превръща личните си уроци в колективна мъдрост за цялата екосистема.
 
@@ -128,8 +173,8 @@
 🙏 Благодарим на партньорите, които ни подкрепят в осъществяването на Сезон 3 на &quot;Свръхчовекът На Живо&quot;:
 💜 Planet Schwarz Tech Theater 🧡 ‪ SuperHosting    💚 ‪ StorPoolStorage   🍸 NOMAD Barman 💛 HackBulgaria</itunes:summary>
       <itunes:subtitle>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с…</itunes:subtitle>
-      <description>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Георги Държанлиев на 25.10.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
-👉 Вземи своя билет: https://bit.ly/tshps3e2
+      <description>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Марина Стефанова на 29.11.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
+👉 Вземи своя билет: https://bit.ly/tshps3e3
 
 🎙️ В първия епизод от Сезон 3 се срещнахме с Елена Николова - съосновател на Escreo, ментор, програмен мениджър в Bulgarian Angels Club и двигател зад фондация &quot;Жените в предприемачеството в България&quot; - човек, който превръща личните си уроци в колективна мъдрост за цялата екосистема.
 
@@ -150,13 +195,13 @@
 
 🙏 Благодарим на партньорите, които ни подкрепят в осъществяването на Сезон 3 на &quot;Свръхчовекът На Живо&quot;:
 💜 Planet Schwarz Tech Theater 🧡 ‪ SuperHosting    💚 ‪ StorPoolStorage   🍸 NOMAD Barman 💛 HackBulgaria</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2178650728-thesuperhumanpodcast-live-s3e1.mp3" length="89493870"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2178650728-thesuperhumanpodcast-tshp-live-s3e1.mp3" length="89493870"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-1W0b7npBLpLY211X-aPzulw-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2181894343</guid>
       <title>Еп 472 | Мая Златанова: Животът е за да растем и развиваме, а не само за да имаме и да постигаме</title>
       <pubDate>Tue, 21 Oct 2025 04:00:24 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/episode-472</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/thesuperhumanpodcast-episode472</link>
       <itunes:duration>02:34:33</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -221,13 +266,13 @@
 🙌 ‪HackBulgaria развиват общност за софтуерни специалисти и IT хора в България! Стани част от нея от тук: https://bit.ly/JoinHackBulgaria, за да научаваш за предстоящите им инициативи! 
 
 🙏 Благодарим на партньорите на проекта: Yotpo | StorpoolStorage | HackBulgaria | SuperHosting.BG | LimeChain | Novator | Dynaphos | Aula.bg | Ardes.bg | Decibel | Swipe.bg | Oreshak Handmade | Paysera 🙏</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2181894343-thesuperhumanpodcast-episode-472.mp3" length="222664182"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2181894343-thesuperhumanpodcast-thesuperhumanpodcast-episode472.mp3" length="222664182"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-y49IvPx6LjtTwCwe-vb425Q-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2181867683</guid>
       <title>Еп 471 | Алексей Лазаров: Свободата не е липса на ограничения, свободата е какво правиш с тях</title>
       <pubDate>Tue, 14 Oct 2025 04:00:03 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/episode-471-aleksei-lazarov</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/thesuperhumanpodcast-episode471</link>
       <itunes:duration>02:42:54</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -296,13 +341,13 @@
 🙌 ‪ ⁨HackBulgaria⁩ развиват общност за софтуерни специалисти и IT хора в България! Стани част от нея от тук: https://bit.ly/JoinHackBulgaria, за да научаваш за предстоящите им инициативи! 
 
 🙏 Благодарим на партньорите на проекта: Yotpo | StorpoolStorage | HackBulgaria | SuperHosting.BG | LimeChain | Novator | Dynaphos | Aula.bg | Ardes.bg | Decibel | Swipe.bg | Oreshak Handmade | Paysera 🙏</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2181867683-thesuperhumanpodcast-episode-471-aleksei-lazarov.mp3" length="234671108"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2181867683-thesuperhumanpodcast-thesuperhumanpodcast-episode471.mp3" length="234671108"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-pi32rIMa8R9sfNMr-zsc82w-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2181839251</guid>
       <title>Еп 470 | Васил Василев: Прави най-доброто, което можеш в ситуацията, в която се намираш</title>
       <pubDate>Tue, 07 Oct 2025 04:00:13 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/episode-470-vasil-vasilev</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/thesuperhumanpodcast-episode470</link>
       <itunes:duration>02:54:42</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -375,13 +420,13 @@
 🙌  HackBulgaria развиват общност за софтуерни специалисти и IT хора в България! Стани част от нея от тук: https://bit.ly/JoinHackBulgaria, за да научаваш за предстоящите им инициативи! 
 
 🙏 Благодарим на партньорите на проекта: Yotpo | StorpoolStorage | HackBulgaria | SuperHosting.BG | LimeChain | Novator | Dynaphos | Aula.bg | Ardes.bg | Decibel | Swipe.bg | Oreshak Handmade | Paysera 🙏</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2181839251-thesuperhumanpodcast-episode-470-vasil-vasilev.mp3" length="251671563"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2181839251-thesuperhumanpodcast-thesuperhumanpodcast-episode470.mp3" length="251671563"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-vgz86n6t1kUaFPzh-tTTy3A-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2167715043</guid>
       <title>Еп469 | Росен Богомилов: Училището е сърцето на една общност</title>
       <pubDate>Tue, 30 Sep 2025 04:00:22 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/episode-469</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/thesuperhumanpodcast-episode469</link>
       <itunes:duration>02:36:32</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -422,13 +467,13 @@
 💡 Вдъхновяваща история за това как образованието става мисия, а училището - място, където всяко дете е важно. 
 
 🙏 Благодарим на партньорите на проекта: Yotpo | StorpoolStorage | HackBulgaria | SuperHosting.BG | LimeChain | Novator | Dynaphos | Aula.bg | Ardes.bg | Decibel | Swipe.bg | Oreshak Handmade | Paysera 🙏</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2167715043-thesuperhumanpodcast-episode-469.mp3" length="225806238"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2167715043-thesuperhumanpodcast-thesuperhumanpodcast-episode469.mp3" length="225806238"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-z7kJGNRgcfrfinLC-AZwxPA-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2158002429</guid>
       <title>Еп468 | Любомир Ваньов: Провалът е много хубаво нещо, защото е урок</title>
       <pubDate>Tue, 23 Sep 2025 04:00:06 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/episode-468</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/thesuperhumanpodcast-episode468</link>
       <itunes:duration>02:27:39</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -465,7 +510,7 @@
 ✅ Защо в момент на криза е по-важно &quot;кой&quot; може да помогне, а не &quot;как&quot; сам да решиш проблема
 
 💡 История за това как технологичните иновации и човешката отдаденост могат да трансформират цяла образователна система, когато са водени от правилните ценности и устойчива визия.</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2158002429-thesuperhumanpodcast-episode-468.mp3" length="212994080"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2158002429-thesuperhumanpodcast-thesuperhumanpodcast-episode468.mp3" length="212994080"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-SiIjDQFXWcc29kRL-jXhuIA-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2157692724</guid>
@@ -538,16 +583,16 @@
       <itunes:image href="https://i1.sndcdn.com/artworks-4rvtzTNxsBBrbxsW-ZQwYsw-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2169300618</guid>
-      <title>Георги Къдрев: Фокусът е всичко | От Imagga до революция в здравеопазването</title>
+      <title>На живо | Георги Къдрев: Фокусът е всичко!</title>
       <pubDate>Sat, 13 Sep 2025 10:00:11 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/tshp_live_28_may_2025_2_audio</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s2e9</link>
       <itunes:duration>01:07:27</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>🚀 Добре дошли в Сезон 3 на Свръхчовекът На Живо с Елена Николова на 27.09.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
-👉 Резервирай своето място сега: https://bit.ly/tshps3e1
+      <itunes:summary>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Марина Стефанова на 29.11.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
+👉 Вземи своя билет: https://bit.ly/tshps3e3
 
-В този специален финален епизод от Сезон 2 се срещнахме с Георги Къдрев - съосновател на Imagga и Kelvin Health, 6 години след неговото първо участие в #ЕПИЗОД138. Той е технологичен предприемач с глобално въздействие, чиито AI компании се конкурират с гиганти като Google, Microsoft и IBM.
+🎤 В този специален финален епизод от Сезон 2 на &quot;Свръхчовекът на живо&quot; се срещнахме с Георги Къдрев - съосновател на Imagga и Kelvin Health, 6 години след неговото първо участие в #ЕПИЗОД138. Той е технологичен предприемач с глобално въздействие, чиито AI компании се конкурират с гиганти като Google, Microsoft и IBM.
 
 Пред публиката, която присъствайки подкрепи Фондация &quot;Свръхчовекът с Георги Ненов&quot;, разговаряхме за:
 
@@ -568,14 +613,14 @@
 👇 Не пропускай да споделиш своите прозрения от гледането на този епизод в коментар!
 
 🙏 Благодарим на партньорите, които ни подкрепят в осъществяването на Сезон 2 на &quot;Свръхчовекът На Живо&quot;:
-💜 Planet Schwarz Tech Theater 🧡 ‪ @superhosting  💚 ‪  @StorPoolStorage   🍸 NOMAD Barman
+💜 Planet Schwarz Tech Theater 🧡 ‪SuperHosting.BG  💚 ‪  StorPool Storage   🍸 NOMAD Barman
 
 🙏 Изказваме искрени благодарности и на благодетелите, които дариха средства, за да могат гимназисти и студенти да присъстват безплатно на събитието.</itunes:summary>
-      <itunes:subtitle>🚀 Добре дошли в Сезон 3 на Свръхчовекът На Живо …</itunes:subtitle>
-      <description>🚀 Добре дошли в Сезон 3 на Свръхчовекът На Живо с Елена Николова на 27.09.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
-👉 Резервирай своето място сега: https://bit.ly/tshps3e1
+      <itunes:subtitle>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с…</itunes:subtitle>
+      <description>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Марина Стефанова на 29.11.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
+👉 Вземи своя билет: https://bit.ly/tshps3e3
 
-В този специален финален епизод от Сезон 2 се срещнахме с Георги Къдрев - съосновател на Imagga и Kelvin Health, 6 години след неговото първо участие в #ЕПИЗОД138. Той е технологичен предприемач с глобално въздействие, чиито AI компании се конкурират с гиганти като Google, Microsoft и IBM.
+🎤 В този специален финален епизод от Сезон 2 на &quot;Свръхчовекът на живо&quot; се срещнахме с Георги Къдрев - съосновател на Imagga и Kelvin Health, 6 години след неговото първо участие в #ЕПИЗОД138. Той е технологичен предприемач с глобално въздействие, чиито AI компании се конкурират с гиганти като Google, Microsoft и IBM.
 
 Пред публиката, която присъствайки подкрепи Фондация &quot;Свръхчовекът с Георги Ненов&quot;, разговаряхме за:
 
@@ -596,16 +641,16 @@
 👇 Не пропускай да споделиш своите прозрения от гледането на този епизод в коментар!
 
 🙏 Благодарим на партньорите, които ни подкрепят в осъществяването на Сезон 2 на &quot;Свръхчовекът На Живо&quot;:
-💜 Planet Schwarz Tech Theater 🧡 ‪ @superhosting  💚 ‪  @StorPoolStorage   🍸 NOMAD Barman
+💜 Planet Schwarz Tech Theater 🧡 ‪SuperHosting.BG  💚 ‪  StorPool Storage   🍸 NOMAD Barman
 
 🙏 Изказваме искрени благодарности и на благодетелите, които дариха средства, за да могат гимназисти и студенти да присъстват безплатно на събитието.</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2169300618-thesuperhumanpodcast-tshp_live_28_may_2025_2_audio.mp3" length="97172466"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2169300618-thesuperhumanpodcast-tshp-live-s2e9.mp3" length="97172466"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-fNJGzoxcTHZRSKuH-30Eeqg-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2137875156</guid>
       <title>Николай Жейнов: Историите са най-силният инструмент за вдъхновяване | Еп466</title>
       <pubDate>Tue, 09 Sep 2025 04:00:12 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/465_nikolay_zheynov_audio</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/thesuperhumanpodcast-episode466</link>
       <itunes:duration>02:45:27</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -670,7 +715,7 @@
 🙌 ‪HackBulgaria развиват общност за софтуерни специалисти и IT хора в България! Стани част от нея от тук: https://bit.ly/JoinHackBulgaria, за да научаваш за предстоящите им инициативи! 
 
 🙏 Благодарим на партньорите на проекта: Yotpo | StorpoolStorage | HackBulgaria | SuperHosting.BG | LimeChain | Novator | Dynaphos | Aula.bg | Ardes.bg | Decibel | Swipe.bg | Oreshak Handmade | Paysera 🙏</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2137875156-thesuperhumanpodcast-465_nikolay_zheynov_audio.mp3" length="238629313"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2137875156-thesuperhumanpodcast-thesuperhumanpodcast-episode466.mp3" length="238629313"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-OdMBRpinuFpkup6k-B4FjWA-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2135204883</guid>
@@ -1699,9 +1744,9 @@
       <itunes:image href="https://i1.sndcdn.com/artworks-3KVQk56JAvh28qsB-u5hOrg-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2087949021</guid>
-      <title>Действието побеждава съмнението: Пътят на серийния предприемач | Никола Томов</title>
+      <title>На живо | Никола Томов: Действието побеждава съмнението!</title>
       <pubDate>Wed, 21 May 2025 00:00:00 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/tshplive20</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s2e8</link>
       <itunes:duration>01:04:58</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -1754,7 +1799,7 @@
 💜 Planet Schwarz Tech Theater 🧡 ‪‪SuperHosting.BG 💚‪‪StorPool Storage‬  💖 NOMAD Barman
 
 🙏 Изказваме искрени благодарности и на благодетелите, които дариха средства, за да могат гимназисти и студенти да присъстват безплатно на събитието. Стани част от промяната: https://bit.ly/podkrepiTSHP</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2087949021-thesuperhumanpodcast-tshplive20.mp3" length="31191212"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2087949021-thesuperhumanpodcast-tshp-live-s2e8.mp3" length="31191212"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-GLpHocoG9tEWstGH-sktr8A-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2075670584</guid>
@@ -2052,16 +2097,16 @@
       <itunes:image href="https://i1.sndcdn.com/artworks-mfmjaKHUWPYU9IZ1-t6z2wg-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2068222888</guid>
-      <title>Жюстин Томс: Лесните пътища не са интересни | За писането, лидерството и смелостта да бъдеш различен</title>
+      <title>На живо | Жюстин Томс: Лесните пътища не са интересни!</title>
       <pubDate>Thu, 24 Apr 2025 00:00:00 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/tshplive19</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s2e7</link>
       <itunes:duration>01:10:04</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>🚀 Не пропускай последното събитие от Сезон 2 на Свръхчовекът На Живо с Георги Къдрев (#ЕПИЗОД138) на 28.05.2025 от 18:30ч. в Planet Schwarz - София, бул. Черни връх 51!
-👉 Резервирай своето място сега: https://bit.ly/tshpLiveS2E9
+      <itunes:summary>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Марина Стефанова на 29.11.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
+👉 Вземи своя билет: https://bit.ly/tshps3e3
 
-В този вдъхновяващ епизод се срещаме с Жюстин Томс - преподавател в Нов български университет, предприемач, автор на 25+ книги и съосновател на инициативата &quot;Училище за бъдеще&quot;. Тя гостува на подкаста преди цели 9 години в #ЕПИЗОД013 
+🎤 В този вдъхновяващ разговор се срещаме с Жюстин Томс - преподавател в Нов български университет, предприемач, автор на 25+ книги и съосновател на инициативата &quot;Училище за бъдеще&quot;. Тя гостува на подкаста преди цели 9 години в #ЕПИЗОД013 
 
 На 26.03.2025, пред публиката, която присъствайки подкрепи Фондация &quot;Свръхчовекът с Георги Ненов&quot;, разговаряхме за:
 
@@ -2083,11 +2128,11 @@
 
 🙏 Благодарим на партньорите, които ни подкрепят в осъществяването на Сезон 2 на &quot;Свръхчовекът На Живо&quot;:
 💜 Planet Schwarz Tech Theatre 🧡 ‪SuperHosting.BG   💚 StorPoolStorage   🍸 NOMAD Barman</itunes:summary>
-      <itunes:subtitle>🚀 Не пропускай последното събитие от Сезон 2 на …</itunes:subtitle>
-      <description>🚀 Не пропускай последното събитие от Сезон 2 на Свръхчовекът На Живо с Георги Къдрев (#ЕПИЗОД138) на 28.05.2025 от 18:30ч. в Planet Schwarz - София, бул. Черни връх 51!
-👉 Резервирай своето място сега: https://bit.ly/tshpLiveS2E9
+      <itunes:subtitle>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с…</itunes:subtitle>
+      <description>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Марина Стефанова на 29.11.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
+👉 Вземи своя билет: https://bit.ly/tshps3e3
 
-В този вдъхновяващ епизод се срещаме с Жюстин Томс - преподавател в Нов български университет, предприемач, автор на 25+ книги и съосновател на инициативата &quot;Училище за бъдеще&quot;. Тя гостува на подкаста преди цели 9 години в #ЕПИЗОД013 
+🎤 В този вдъхновяващ разговор се срещаме с Жюстин Томс - преподавател в Нов български университет, предприемач, автор на 25+ книги и съосновател на инициативата &quot;Училище за бъдеще&quot;. Тя гостува на подкаста преди цели 9 години в #ЕПИЗОД013 
 
 На 26.03.2025, пред публиката, която присъствайки подкрепи Фондация &quot;Свръхчовекът с Георги Ненов&quot;, разговаряхме за:
 
@@ -2109,7 +2154,7 @@
 
 🙏 Благодарим на партньорите, които ни подкрепят в осъществяването на Сезон 2 на &quot;Свръхчовекът На Живо&quot;:
 💜 Planet Schwarz Tech Theatre 🧡 ‪SuperHosting.BG   💚 StorPoolStorage   🍸 NOMAD Barman</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2068222888-thesuperhumanpodcast-tshplive19.mp3" length="100950875"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2068222888-thesuperhumanpodcast-tshp-live-s2e7.mp3" length="100950875"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-xssQyEqK5YU8kaXi-DtysIQ-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2054382108</guid>
@@ -2340,7 +2385,7 @@ StorPool е българска компания, разработваща соф
       <itunes:image href="https://i1.sndcdn.com/artworks-Izpaqnf5p1ywnWzM-xekevA-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2039244700</guid>
-      <title>Еп443 | Петър Петров: Как изкуственият интелект ще промени всичко!</title>
+      <title>Еп443 | Петър Петров: Път винаги има!</title>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
       <link>https://soundcloud.com/thesuperhumanpodcast/thesuperhumanpodcast-episode443</link>
       <itunes:duration>02:44:35</itunes:duration>
@@ -2403,7 +2448,7 @@ StorPool е българска компания, разработваща соф
       <itunes:image href="https://i1.sndcdn.com/artworks-ApzNWOYtgC40g13y-69brcQ-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2044083896</guid>
-      <title>От малка семейна козметика до кралския двор | Силвия Павлова от Wooden Spoon | Еп442</title>
+      <title>Еп442 | Силвия Павлова: Дървената лъжица винаги побеждава!</title>
       <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
       <link>https://soundcloud.com/thesuperhumanpodcast/thesuperhumanpodcast-episode442</link>
       <itunes:duration>02:50:37</itunes:duration>
@@ -2474,14 +2519,14 @@ StorPool е българска компания, разработваща соф
       <itunes:image href="https://i1.sndcdn.com/artworks-SjloEzdVx5lBZJUp-wrTlcA-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2045297024</guid>
-      <title>Михаил Стефанов: Никой не успява сам | За смелите кариерни завои, менторството и истинския успех</title>
+      <title>На живо | Михаил Стефанов: Никой не успява сам!</title>
       <pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/tshplive18</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s2e6</link>
       <itunes:duration>01:10:15</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>🚀 Не пропускай последното събитие от Сезон 2 на Свръхчовекът На Живо с Георги Къдрев (#ЕПИЗОД138) на 28.05.2025 от 18:30ч. в Planet Schwarz - София, бул. Черни връх 51!
-👉 Резервирай своето място сега: https://bit.ly/tshpLiveS2E9
+      <itunes:summary>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Марина Стефанова на 29.11.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
+👉 Вземи своя билет: https://bit.ly/tshps3e3
 
 В този вдъхновяващ епизод се срещаме с Мишо Стефанов - познат вече от #ЕПИЗОД203, човек с необичайна кариерна траектория – от консултантски бизнес до ключова роля в Aurubis Bulgaria (водеща компания в производството на цветни метали).
 
@@ -2503,9 +2548,9 @@ StorPool е българска компания, разработваща соф
 💜 Planet Schwarz Tech Theater 🧡 SuperHosting.BG 💚StorPool Storage 💖 NOMAD Barman
 
 🙏 Изказваме искрени благодарности и на благодетелите, които дариха, за да могат гимназисти и студенти да присъстват безплатно на събитието.</itunes:summary>
-      <itunes:subtitle>🚀 Не пропускай последното събитие от Сезон 2 на …</itunes:subtitle>
-      <description>🚀 Не пропускай последното събитие от Сезон 2 на Свръхчовекът На Живо с Георги Къдрев (#ЕПИЗОД138) на 28.05.2025 от 18:30ч. в Planet Schwarz - София, бул. Черни връх 51!
-👉 Резервирай своето място сега: https://bit.ly/tshpLiveS2E9
+      <itunes:subtitle>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с…</itunes:subtitle>
+      <description>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Марина Стефанова на 29.11.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
+👉 Вземи своя билет: https://bit.ly/tshps3e3
 
 В този вдъхновяващ епизод се срещаме с Мишо Стефанов - познат вече от #ЕПИЗОД203, човек с необичайна кариерна траектория – от консултантски бизнес до ключова роля в Aurubis Bulgaria (водеща компания в производството на цветни метали).
 
@@ -2527,7 +2572,7 @@ StorPool е българска компания, разработваща соф
 💜 Planet Schwarz Tech Theater 🧡 SuperHosting.BG 💚StorPool Storage 💖 NOMAD Barman
 
 🙏 Изказваме искрени благодарности и на благодетелите, които дариха, за да могат гимназисти и студенти да присъстват безплатно на събитието.</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2045297024-thesuperhumanpodcast-tshplive18.mp3" length="101215672"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2045297024-thesuperhumanpodcast-tshp-live-s2e6.mp3" length="101215672"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-3tSEaTukWFI2TuyG-zoUXMg-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2041780812</guid>
@@ -2819,14 +2864,14 @@ StorPool е българска компания, разработваща соф
       <itunes:image href="https://i1.sndcdn.com/artworks-fTzbUzukBfwuGSKX-25nSeQ-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2021639781</guid>
-      <title>SoftUni, AI и как да намериш призванието си | Светлин Наков</title>
+      <title>На живо |  Светлин Наков: SoftUni, AI и как да намериш призванието си</title>
       <pubDate>Thu, 20 Feb 2025 09:17:03 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/tshplive17</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s2e5</link>
       <itunes:duration>01:06:33</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>🚀 Не пропускай последното събитие от Сезон 2 на Свръхчовекът На Живо с Георги Къдрев (#ЕПИЗОД138) на 28.05.2025 от 18:30ч. в Planet Schwarz - София, бул. Черни връх 51!
-👉 Резервирай своето място сега: https://bit.ly/tshpLiveS2E9
+      <itunes:summary>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Марина Стефанова на 29.11.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
+👉 Вземи своя билет: https://bit.ly/tshps3e3
 
 В този вдъхновяващ епизод се срещаме със Светлин Наков - основател на SoftUni и визионер в IT образованието, гост на подкаста в #ЕПИЗОД003 преди 8 години. Той е човекът, работещ върху превръщането на България в Силициевата долина на Европа в реалност и заедно с екипа на SoftUni, достигнал до над 500 000 души с образователните си инициативи.
 
@@ -2851,9 +2896,9 @@ StorPool е българска компания, разработваща соф
 🙏 Благодарим на партньорите, които ни подкрепят в осъществяването на Сезон 2 на &quot;Свръхчовекът На Живо&quot;:
 
 💜 Planet Schwarz Tech Theater 🧡 SuperHosting.BG 💚 StorPoolStorage  🍸 NOMAD Barman</itunes:summary>
-      <itunes:subtitle>🚀 Не пропускай последното събитие от Сезон 2 на …</itunes:subtitle>
-      <description>🚀 Не пропускай последното събитие от Сезон 2 на Свръхчовекът На Живо с Георги Къдрев (#ЕПИЗОД138) на 28.05.2025 от 18:30ч. в Planet Schwarz - София, бул. Черни връх 51!
-👉 Резервирай своето място сега: https://bit.ly/tshpLiveS2E9
+      <itunes:subtitle>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с…</itunes:subtitle>
+      <description>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Марина Стефанова на 29.11.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
+👉 Вземи своя билет: https://bit.ly/tshps3e3
 
 В този вдъхновяващ епизод се срещаме със Светлин Наков - основател на SoftUni и визионер в IT образованието, гост на подкаста в #ЕПИЗОД003 преди 8 години. Той е човекът, работещ върху превръщането на България в Силициевата долина на Европа в реалност и заедно с екипа на SoftUni, достигнал до над 500 000 души с образователните си инициативи.
 
@@ -2878,7 +2923,7 @@ StorPool е българска компания, разработваща соф
 🙏 Благодарим на партньорите, които ни подкрепят в осъществяването на Сезон 2 на &quot;Свръхчовекът На Живо&quot;:
 
 💜 Planet Schwarz Tech Theater 🧡 SuperHosting.BG 💚 StorPoolStorage  🍸 NOMAD Barman</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2021639781-thesuperhumanpodcast-tshplive17.mp3" length="95851269"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2021639781-thesuperhumanpodcast-tshp-live-s2e5.mp3" length="95851269"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-8rAsm3NBw15zztJC-9UNCXA-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2031580244</guid>
@@ -2996,14 +3041,14 @@ StorPool е българска компания, разработваща соф
       <itunes:image href="https://i1.sndcdn.com/artworks-DRJigXgwozosl7oR-tDpFUA-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2016185487</guid>
-      <title>Когато разочароваш някого заради достойнството си, значи си на прав път! | Мая Донева</title>
+      <title>На живо | Мая Донева: Когато разочароваш някого заради достойнството си, значи си на прав път!</title>
       <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/tshplive16</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s2e4</link>
       <itunes:duration>01:04:43</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>🚀 Не пропускай последното събитие от Сезон 2 на Свръхчовекът На Живо с Георги Къдрев (#ЕПИЗОД138) на 28.05.2025 от 18:30ч. в Planet Schwarz - София, бул. Черни връх 51!
-👉 Резервирай своето място сега: https://bit.ly/tshpLiveS2E9
+      <itunes:summary>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Марина Стефанова на 29.11.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
+👉 Вземи своя билет: https://bit.ly/tshps3e3
 
 В този вдъхновяващ епизод се срещаме с Мая Донева - гост на подкаста в #ЕПИЗОД108 преди 6 години. Тя е социален предприемач, основател на &quot;Социалната чайна&quot; и създател на кампанията #Be_Disappointing 
 
@@ -3023,9 +3068,9 @@ StorPool е българска компания, разработваща соф
 
 🙏 Благодарим на партньорите, които ни подкрепят в осъществяването на Сезон 2 на &quot;Свръхчовекът На Живо&quot;:
 💜 Planet Schwarz Tech Theatre 🧡  SuperHosting.BG  🍸 NOMAD Barman</itunes:summary>
-      <itunes:subtitle>🚀 Не пропускай последното събитие от Сезон 2 на …</itunes:subtitle>
-      <description>🚀 Не пропускай последното събитие от Сезон 2 на Свръхчовекът На Живо с Георги Къдрев (#ЕПИЗОД138) на 28.05.2025 от 18:30ч. в Planet Schwarz - София, бул. Черни връх 51!
-👉 Резервирай своето място сега: https://bit.ly/tshpLiveS2E9
+      <itunes:subtitle>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с…</itunes:subtitle>
+      <description>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Марина Стефанова на 29.11.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
+👉 Вземи своя билет: https://bit.ly/tshps3e3
 
 В този вдъхновяващ епизод се срещаме с Мая Донева - гост на подкаста в #ЕПИЗОД108 преди 6 години. Тя е социален предприемач, основател на &quot;Социалната чайна&quot; и създател на кампанията #Be_Disappointing 
 
@@ -3045,7 +3090,7 @@ StorPool е българска компания, разработваща соф
 
 🙏 Благодарим на партньорите, които ни подкрепят в осъществяването на Сезон 2 на &quot;Свръхчовекът На Живо&quot;:
 💜 Planet Schwarz Tech Theatre 🧡  SuperHosting.BG  🍸 NOMAD Barman</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2016185487-thesuperhumanpodcast-tshplive16.mp3" length="93212403"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/2016185487-thesuperhumanpodcast-tshp-live-s2e4.mp3" length="93212403"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-L3rkCeIen8cDM9OV-KUQsXg-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/2014183559</guid>
@@ -3549,9 +3594,9 @@ StorPool е българска компания, разработваща соф
       <itunes:image href="https://i1.sndcdn.com/artworks-zaQZHk6xxxmotUos-nz9UCg-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1981849771</guid>
-      <title>Болката и трудностите са благословия - те ни правят по-силни! | Стойне Василев</title>
+      <title>На живо | Стойне Василев: Болката и трудностите са благословия - те ни правят по-силни!</title>
       <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/tshplive15</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s2e3</link>
       <itunes:duration>01:04:19</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -3606,7 +3651,7 @@ StorPool е българска компания, разработваща соф
 
 🙏 Благодарим на партньорите, които ни подкрепят в осъществяването на Сезон 2 на &quot;Свръхчовекът На Живо&quot;:
 💜 Planet Schwarz Tech Theatre 🧡 SuperHosting.BG 🍸 NOMAD Barman</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1981849771-thesuperhumanpodcast-tshplive15.mp3" length="92658722"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1981849771-thesuperhumanpodcast-tshp-live-s2e3.mp3" length="92658722"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-yvy7r57JyyTD5H4y-VZ6lLA-t3000x3000.png"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1976548591</guid>
@@ -3789,14 +3834,14 @@ StorPool е българска компания, разработваща соф
       <itunes:image href="https://i1.sndcdn.com/artworks-QyWfVkhBnkCN8E20-m0vvbA-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1963474627</guid>
-      <title>На живо | Човек винаги плаща цена за успеха, който е постигнал! | Инес Субашка | С2Еп2</title>
+      <title>На живо | Инес Субашка: Човек винаги плаща цена за успеха, който е постигнал!</title>
       <pubDate>Thu, 21 Nov 2024 00:00:00 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/tshplive14</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s2e2</link>
       <itunes:duration>01:06:02</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>🚀 Не пропускай последното събитие от Сезон 2 на Свръхчовекът На Живо с Георги Къдрев (#ЕПИЗОД138) на 28.05.2025 от 18:30ч. в Planet Schwarz - София, бул. Черни връх 51!
-👉 Резервирай своето място сега: https://bit.ly/tshpLiveS2E9
+      <itunes:summary>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Марина Стефанова на 29.11.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
+👉 Вземи своя билет: https://bit.ly/tshps3e3
 
 В този вдъхновяващ епизод се срещаме с Инес Субашка - гост на подкаста в #ЕПИЗОД014 в самото му начало преди 8 години. Тя е създател на залите за кондиционни тренировки IFS, автор е на 8 книги, треньор и ментор е на хора, които са осъзнали нуждата да се грижата за себе си и водещ на собствен подкаст. 
 
@@ -3823,9 +3868,9 @@ StorPool е българска компания, разработваща соф
 👇 Не пропускай да споделиш своите прозрения от гледането на този епизод в коментар!
 
 🙏 Благодарим на партньорите, които ни подкрепят в осъществяването на Сезон 2 на “Свръхчовекът На Живо” 💜 Planet Schwarz Tech Theatre 🧡 SuperHosting.BG 🍸 NOMAD Barman</itunes:summary>
-      <itunes:subtitle>🚀 Не пропускай последното събитие от Сезон 2 на …</itunes:subtitle>
-      <description>🚀 Не пропускай последното събитие от Сезон 2 на Свръхчовекът На Живо с Георги Къдрев (#ЕПИЗОД138) на 28.05.2025 от 18:30ч. в Planet Schwarz - София, бул. Черни връх 51!
-👉 Резервирай своето място сега: https://bit.ly/tshpLiveS2E9
+      <itunes:subtitle>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с…</itunes:subtitle>
+      <description>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Марина Стефанова на 29.11.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
+👉 Вземи своя билет: https://bit.ly/tshps3e3
 
 В този вдъхновяващ епизод се срещаме с Инес Субашка - гост на подкаста в #ЕПИЗОД014 в самото му начало преди 8 години. Тя е създател на залите за кондиционни тренировки IFS, автор е на 8 книги, треньор и ментор е на хора, които са осъзнали нуждата да се грижата за себе си и водещ на собствен подкаст. 
 
@@ -3852,13 +3897,13 @@ StorPool е българска компания, разработваща соф
 👇 Не пропускай да споделиш своите прозрения от гледането на този епизод в коментар!
 
 🙏 Благодарим на партньорите, които ни подкрепят в осъществяването на Сезон 2 на “Свръхчовекът На Живо” 💜 Planet Schwarz Tech Theatre 🧡 SuperHosting.BG 🍸 NOMAD Barman</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1963474627-thesuperhumanpodcast-tshplive14.mp3" length="98633813"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1963474627-thesuperhumanpodcast-tshp-live-s2e2.mp3" length="98633813"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-MyUedbADOizojSck-LFBgrw-t3000x3000.png"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1834719612</guid>
-      <title>На живо | Еволюция на личността и важността на самопознанието - Евгения Пеева-Кирова | С1Еп12</title>
+      <title>На живо | Евгения Пеева-Кирова: Еволюция на личността и важността на самопознанието!</title>
       <pubDate>Sun, 17 Nov 2024 08:59:59 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/tshplive12</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s1e12</link>
       <itunes:duration>01:04:27</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -3911,7 +3956,7 @@ StorPool е българска компания, разработваща соф
 👇 Не пропускай да споделиш своите прозрения от този епизод в коментар!
 
 🙏 Благодарим на партньорите, които ни подкрепиха в осъществяването на Сезон 1 на “Свръхчовекът На Живо”: 💜Planet Schwarz Tech Theatre 🧡 SuperHosting.BG</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1834719612-thesuperhumanpodcast-tshplive12.mp3" length="92788544"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1834719612-thesuperhumanpodcast-tshp-live-s1e12.mp3" length="92788544"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-gNs3T14PJh63QDGi-7y8sKw-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1959330099</guid>
@@ -4163,14 +4208,14 @@ StorPool е българска компания, разработваща соф
       <itunes:image href="https://i1.sndcdn.com/artworks-t3o0LeKK89tNUWCB-hEuzpw-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1942106967</guid>
-      <title>На живо | Това са двете важни неща - нагласа и действия | Георги Малчев | С2Еп1</title>
+      <title>На живо | Георги Малчев: Нагласа и действия - това са двете важни неща!</title>
       <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/tshplive13</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s2e1</link>
       <itunes:duration>01:04:38</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>🚀 Не пропускай последното събитие от Сезон 2 на Свръхчовекът На Живо с Георги Къдрев (#ЕПИЗОД138) на 28.05.2025 от 18:30ч. в Planet Schwarz - София, бул. Черни връх 51!
-👉 Резервирай своето място сега: https://bit.ly/tshpLiveS2E9
+      <itunes:summary>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Марина Стефанова на 29.11.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
+👉 Вземи своя билет: https://bit.ly/tshps3e3
 
 В този вдъхновяващ епизод се срещаме с Георги Малчев - гост на подкаста в #ЕПИЗОД017 в самото му начало. Той е съосновател на дигиталната агенция Xplora BG - преподавател по маркетинг и комуникации, съосновател на Фондация &quot;Предай нататък&quot;, съавтор на книгата &quot;Бъди за пример като успешен родител&quot; и още много неща.  
 
@@ -4195,9 +4240,9 @@ StorPool е българска компания, разработваща соф
 👇 Не пропускай да споделиш своите прозрения от гледането на този епизод в коментари!
 
 🙏 Благодарим на партньорите, които ни подкрепят в осъществяването на Сезон 2 на “Свръхчовекът На Живо” 💜 Planet Schwarz Tech Theatre 🧡 SuperHosting.BG 🍸 NOMAD Barman</itunes:summary>
-      <itunes:subtitle>🚀 Не пропускай последното събитие от Сезон 2 на …</itunes:subtitle>
-      <description>🚀 Не пропускай последното събитие от Сезон 2 на Свръхчовекът На Живо с Георги Къдрев (#ЕПИЗОД138) на 28.05.2025 от 18:30ч. в Planet Schwarz - София, бул. Черни връх 51!
-👉 Резервирай своето място сега: https://bit.ly/tshpLiveS2E9
+      <itunes:subtitle>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с…</itunes:subtitle>
+      <description>🚀 Продължаваме Сезон 3 на Свръхчовекът На Живо с гост Марина Стефанова на 29.11.2025 г. от 17:00ч. в Planet Schwarz - София, бул. Черни връх 51!
+👉 Вземи своя билет: https://bit.ly/tshps3e3
 
 В този вдъхновяващ епизод се срещаме с Георги Малчев - гост на подкаста в #ЕПИЗОД017 в самото му начало. Той е съосновател на дигиталната агенция Xplora BG - преподавател по маркетинг и комуникации, съосновател на Фондация &quot;Предай нататък&quot;, съавтор на книгата &quot;Бъди за пример като успешен родител&quot; и още много неща.  
 
@@ -4222,7 +4267,7 @@ StorPool е българска компания, разработваща соф
 👇 Не пропускай да споделиш своите прозрения от гледането на този епизод в коментари!
 
 🙏 Благодарим на партньорите, които ни подкрепят в осъществяването на Сезон 2 на “Свръхчовекът На Живо” 💜 Planet Schwarz Tech Theatre 🧡 SuperHosting.BG 🍸 NOMAD Barman</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1942106967-thesuperhumanpodcast-tshplive13.mp3" length="101242369"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1942106967-thesuperhumanpodcast-tshp-live-s2e1.mp3" length="101242369"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-VEyFDQlSlkmuPkBy-Ecxp8Q-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1939108817</guid>
@@ -5593,13 +5638,13 @@ StorPool е българска компания, разработваща соф
       <itunes:image href="https://i1.sndcdn.com/avatars-hCcA4H8ZUvq5ORi2-3z845A-original.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1810895937</guid>
-      <title>На живо | Дарин Маджаров: Присъствай осъзнато в живота на децата си! | С1Еп11</title>
+      <title>На живо | Дарин Маджаров: Присъствай осъзнато в живота на децата си!</title>
       <pubDate>Thu, 23 May 2024 12:17:40 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/tshplive11</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s1e11</link>
       <itunes:duration>00:59:27</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>В последния 11 епизод на живо гостува Дарин Маджаров - съосновател на образователната платформа &quot;Уча.се&quot;, предприемач и баща. С него продължихме своята среща от #ЕПИЗОД111  (https://bit.ly/43ICays).
+      <itunes:summary>В единадесетото издание на Свръхчовекът на живо гостува Дарин Маджаров - съосновател на образователната платформа &quot;Уча.се&quot;, предприемач и баща. С него продължихме своята среща от #ЕПИЗОД111  (https://bit.ly/43ICays).
 
 В разговора ни пред публика от 24.04.2024 с Дарин Маджаров основно говорихме за:
 
@@ -5626,8 +5671,8 @@ StorPool е българска компания, разработваща соф
 Подкастът &quot;Свръхчовекът с Георги Ненов&quot; създава общност от проактивни, прогресивни, позитивни и любопитни хора. Всички те искат да се запознават с други хора, като тях. Това води до създаването на &quot;Свръхчовекът на живо&quot; - подкаст на живо, в който публиката може да задава въпроси и да комуникира помежду си.
 
 🙏 Благодарим на партньорите на Свръхчовекът с Георги Ненов в проекта за подкаст на живо: @Planet Schwarz Tech Theatre 💜  @superhosting   🧡 Schweppes Bulgaria 💛</itunes:summary>
-      <itunes:subtitle>В последния 11 епизод на живо гостува Дарин Маджа…</itunes:subtitle>
-      <description>В последния 11 епизод на живо гостува Дарин Маджаров - съосновател на образователната платформа &quot;Уча.се&quot;, предприемач и баща. С него продължихме своята среща от #ЕПИЗОД111  (https://bit.ly/43ICays).
+      <itunes:subtitle>В единадесетото издание на Свръхчовекът на живо г…</itunes:subtitle>
+      <description>В единадесетото издание на Свръхчовекът на живо гостува Дарин Маджаров - съосновател на образователната платформа &quot;Уча.се&quot;, предприемач и баща. С него продължихме своята среща от #ЕПИЗОД111  (https://bit.ly/43ICays).
 
 В разговора ни пред публика от 24.04.2024 с Дарин Маджаров основно говорихме за:
 
@@ -5654,7 +5699,7 @@ StorPool е българска компания, разработваща соф
 Подкастът &quot;Свръхчовекът с Георги Ненов&quot; създава общност от проактивни, прогресивни, позитивни и любопитни хора. Всички те искат да се запознават с други хора, като тях. Това води до създаването на &quot;Свръхчовекът на живо&quot; - подкаст на живо, в който публиката може да задава въпроси и да комуникира помежду си.
 
 🙏 Благодарим на партньорите на Свръхчовекът с Георги Ненов в проекта за подкаст на живо: @Planet Schwarz Tech Theatre 💜  @superhosting   🧡 Schweppes Bulgaria 💛</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1810895937-thesuperhumanpodcast-tshplive11.mp3" length="85699904"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1810895937-thesuperhumanpodcast-tshp-live-s1e11.mp3" length="85699904"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-dNHMBzgJLOCYybGi-4izxUg-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1823402196</guid>
@@ -5904,7 +5949,7 @@ StorPool е българска компания, разработваща соф
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1794669727</guid>
       <title>На живо | Велина Гетова: Изграждането на доверие започва с поемането на лична отговорност | С1Еп10</title>
       <pubDate>Mon, 29 Apr 2024 07:36:35 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/tshplive10</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s1e10</link>
       <itunes:duration>01:02:25</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -5955,7 +6000,7 @@ StorPool е българска компания, разработваща соф
 &quot;Свръхчовекът с Георги Ненов&quot; създава общност от проактивни, прогресивни, позитивни и любопитни хора. Всички те искат да се запознават с други хора, като тях. Това води до създаването на &quot;Свръхчовекът на живо&quot; - подкаст на живо, в който публиката може да задава въпроси, да комуникира помежду си и да създава нови приятелства.
 
 🙏 Благодарим на партньорите на Свръхчовекът с Георги Ненов в проекта за подкаст на живо: Planet Schwarz Tech Theatre 💜 SuperHosting.BG 🧡 Schweppes Bulgaria 💛</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1794669727-thesuperhumanpodcast-tshplive10.mp3" length="89893507"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1794669727-thesuperhumanpodcast-tshp-live-s1e10.mp3" length="89893507"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-u8COGYiJeGqHF1DD-cmzL7A-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1799141023</guid>
@@ -6318,9 +6363,9 @@ StorPool е българска компания, разработваща соф
       <itunes:image href="https://i1.sndcdn.com/avatars-hCcA4H8ZUvq5ORi2-3z845A-original.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1779078822</guid>
-      <title>На живо | Георги Блажев: Успехът идва когато твоето МОГА надвика чуждото НЯМА ДА СЕ СПРАВИШ! | С1Еп9</title>
+      <title>На живо | Георги Блажев: Успехът идва когато твоето МОГА надвика чуждото НЯМА ДА СЕ СПРАВИШ!</title>
       <pubDate>Thu, 21 Mar 2024 07:23:34 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/live009</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s1e9</link>
       <itunes:duration>01:04:29</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -6369,7 +6414,7 @@ StorPool е българска компания, разработваща соф
 Подкастът &quot;Свръхчовекът с Георги Ненов&quot; създава общност от проактивни, прогресивни, позитивни и любопитни хора. Всички те искат да се запознават с други хора, като тях. Това води до създаването на &quot;Свръхчовекът на живо&quot; - подкаст на живо, в който публиката може да задава въпроси и да комуникира помежду си.
 
 🙏 Благодарим на партньорите на Свръхчовекът с Георги Ненов в проекта за подкаст на живо: Planet Schwarz Tech Theatre 💜 SuperHosting.BG 🧡 Schweppes Bulgaria 💛</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1779078822-thesuperhumanpodcast-live009.mp3" length="92919393"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1779078822-thesuperhumanpodcast-tshp-live-s1e9.mp3" length="92919393"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-nSnGkTakJm9BeDFE-gSbvzA-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1771794390</guid>
@@ -6653,9 +6698,9 @@ StorPool е българска компания, разработваща соф
       <itunes:image href="https://i1.sndcdn.com/avatars-hCcA4H8ZUvq5ORi2-3z845A-original.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1754658714</guid>
-      <title>На живо | Иван Цукев: Каквото и да ти се случи, избери да бъдеш щастлив!  | С1Еп8</title>
+      <title>На живо | Иван Цукев: Каквото и да ти се случи, избери да бъдеш щастлив!</title>
       <pubDate>Thu, 22 Feb 2024 09:10:26 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/live008</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s1e8</link>
       <itunes:duration>01:02:54</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -6708,7 +6753,7 @@ StorPool е българска компания, разработваща соф
 Подкастът &quot;Свръхчовекът с Георги Ненов&quot; създава общност от проактивни, прогресивни, позитивни и любопитни хора. Всички те искат да се запознават с други хора, като тях. Това води до създаването на &quot;Свръхчовекът на живо&quot; - подкаст на живо, в който публиката може да задава въпроси и да комуникира помежду си.
 
 🙏 Благодарим на партньорите на проекта за подкаст на живо: Planet Schwarz Tech Theatre 💜 SuperHosting.BG 🧡</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1754658714-thesuperhumanpodcast-live008.mp3" length="105760891"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1754658714-thesuperhumanpodcast-tshp-live-s1e8.mp3" length="105760891"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-0Ogz81dgiyJAwFPy-Q3Yuxw-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1741219413</guid>
@@ -7038,9 +7083,9 @@ StorPool е българска компания, разработваща соф
       <itunes:image href="https://i1.sndcdn.com/avatars-hCcA4H8ZUvq5ORi2-3z845A-original.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1727122122</guid>
-      <title>На живо | проф. д-р Милена Георгиева: Как дигиталните технологии променят медицината | С1Еп7</title>
+      <title>На живо | проф. д-р Милена Георгиева: Дигиталните технологии променят ли медицината?</title>
       <pubDate>Thu, 25 Jan 2024 12:25:41 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/live007</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s1e7</link>
       <itunes:duration>01:03:39</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -7093,7 +7138,7 @@ StorPool е българска компания, разработваща соф
 🔴 Заповядай на Епизод 8 на &quot;Свръхчовекът на живо&quot; с гост Иван Цукев, който ще се състои на 31.01.2024 в гр. София, Planet Schwarz Tech Theater /бул. Черни връх 51А/.
 
 Запазвайки своето място на събитието подкрепяш “Свръхчовекът с Георги Ненов”: 👉 https://bit.ly/tshplive8 🎟️</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1727122122-thesuperhumanpodcast-live007.mp3" length="91529517"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1727122122-thesuperhumanpodcast-tshp-live-s1e7.mp3" length="91529517"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-fN872E27Qtcmmet9-3lsFvQ-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1712974095</guid>
@@ -7454,9 +7499,9 @@ Website - https://epix.ai</description>
       <itunes:image href="https://i1.sndcdn.com/avatars-hCcA4H8ZUvq5ORi2-3z845A-original.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1701709473</guid>
-      <title>На живо | Никола Рахнев: Увереността идва с резултатите! | С1Еп6</title>
+      <title>На живо | Никола Рахнев: Увереността идва с резултатите!</title>
       <pubDate>Thu, 28 Dec 2023 07:48:25 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/live006</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s1e6</link>
       <itunes:duration>01:07:19</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -7491,7 +7536,7 @@ Networking: 20:30 - 21:30
 Край: 21:30
 
 Запазете своето място тук и подкрепете Свръхчовекът с Георги Ненов: https://bit.ly/tshplive7 🎟️</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1701709473-thesuperhumanpodcast-live006.mp3" length="105104163"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1701709473-thesuperhumanpodcast-tshp-live-s1e6.mp3" length="105104163"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-1y4bheCOaZUeJ7aa-E1u7qA-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1697007051</guid>
@@ -7844,9 +7889,9 @@ Rado's FB - https://fb.com/radoslav.rangelov.14</description>
       <itunes:image href="https://i1.sndcdn.com/avatars-hCcA4H8ZUvq5ORi2-3z845A-original.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1675506660</guid>
-      <title>На живо | Елена Маринова: Бъди в среда, която е по-силна от теб! | С1Еп5</title>
+      <title>На живо | Елена Маринова: Бъди в среда, която е по-силна от теб!</title>
       <pubDate>Mon, 27 Nov 2023 10:07:04 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/live005</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s1e5</link>
       <itunes:duration>01:06:47</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -7881,7 +7926,7 @@ Networking: 20:30 - 21:30
 Край: 21:30
 
 Запазете своето място тук и подкрепете Свръхчовекът с Георги Ненов: https://bit.ly/tshplive6 🎟️</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1675506660-thesuperhumanpodcast-live005.mp3" length="104326045"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1675506660-thesuperhumanpodcast-tshp-live-s1e5.mp3" length="104326045"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-BqXydtWPB61dSo8w-EBzogg-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1669737186</guid>
@@ -8324,9 +8369,9 @@ FB: https://fb.com/somnolog.bg</description>
       <itunes:image href="https://i1.sndcdn.com/avatars-hCcA4H8ZUvq5ORi2-3z845A-original.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1644234036</guid>
-      <title>На живо | Ваня Ананиева: Няма как да правиш добър бизнес, без да си добър човек! | С1Еп04</title>
+      <title>На живо | Ваня Ананиева: Няма как да правиш добър бизнес, без да си добър човек!</title>
       <pubDate>Thu, 19 Oct 2023 07:41:24 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/live004</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s1e4</link>
       <itunes:duration>01:02:09</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -8361,7 +8406,7 @@ Networking: 20:30 - 21:30
 Край: 21:30
 
 Запазете своето място тук и подкрепете Свръхчовекът с Георги Ненов: https://bit.ly/tshplive5 🎟️</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1644234036-thesuperhumanpodcast-live004.mp3" length="97656641"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1644234036-thesuperhumanpodcast-tshp-live-s1e4.mp3" length="97656641"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-IyBA4tz2HSNHzBvZ-elwOIw-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1642575531</guid>
@@ -8783,9 +8828,9 @@ FB: https://fb.com/icoRuns
       <itunes:image href="https://i1.sndcdn.com/avatars-hCcA4H8ZUvq5ORi2-3z845A-original.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1621390329</guid>
-      <title>На живо | Христо Бояджиев: Да направим една по-ярка България! | С1Еп3</title>
+      <title>На живо | Христо Бояджиев: Да направим една по-ярка България!</title>
       <pubDate>Thu, 21 Sep 2023 06:52:06 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/live003</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s1e3</link>
       <itunes:duration>01:03:35</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -8820,7 +8865,7 @@ Networking: 20:30 - 21:30
 Край: 21:30
 
 Запазете своето място тук и подкрепете Свръхчовекът с Георги Ненов: https://bit.ly/tshplive4 🎟️</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1621390329-thesuperhumanpodcast-live003.mp3" length="99739969"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1621390329-thesuperhumanpodcast-tshp-live-s1e3.mp3" length="99739969"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-HxQMQcmcvckqk3PL-Cz2tQw-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1618554783</guid>
@@ -9291,9 +9336,9 @@ Networking: 20:30 - 21:30
       <itunes:image href="https://i1.sndcdn.com/avatars-hCcA4H8ZUvq5ORi2-3z845A-original.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1575681061</guid>
-      <title>На живо | Христо Христов: Аз вярвам в теб! | С1Еп2</title>
+      <title>На живо | Христо Христов: Аз вярвам в теб!</title>
       <pubDate>Thu, 27 Jul 2023 10:43:29 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/live002</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s1e2</link>
       <itunes:duration>01:17:04</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -9334,7 +9379,7 @@ Networking: 20:30 - 21:30
 Край: 21:30
 
 Запазете своето място и подкрепете подкаста тук: https://bit.ly/tshplive3 🎟️</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1575681061-thesuperhumanpodcast-live002.mp3" length="119124059"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1575681061-thesuperhumanpodcast-tshp-live-s1e2.mp3" length="119124059"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-0PKJPpS2BjGQ4clP-iUUArA-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1573404721</guid>
@@ -9555,9 +9600,9 @@ https://finlit.bg/</description>
       <itunes:image href="https://i1.sndcdn.com/avatars-hCcA4H8ZUvq5ORi2-3z845A-original.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1546885606</guid>
-      <title>На живо | Васил Терзиев: Всичко започва от нас самите! | С1Еп1</title>
+      <title>На живо | Васил Терзиев: Всичко започва от нас самите!</title>
       <pubDate>Thu, 22 Jun 2023 11:51:30 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/live001</link>
+      <link>https://soundcloud.com/thesuperhumanpodcast/tshp-live-s1e1</link>
       <itunes:duration>01:02:21</itunes:duration>
       <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
       <itunes:explicit>no</itunes:explicit>
@@ -9592,7 +9637,7 @@ Networking: 20:30 - 21:30
 Край: 21:30
 
 Запазете своето място тук: https://bit.ly/tshplive2 🎟️</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1546885606-thesuperhumanpodcast-live001.mp3" length="119752477"/>
+      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1546885606-thesuperhumanpodcast-tshp-live-s1e1.mp3" length="119752477"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-ZjYzOzf4YMozSv4y-cc1m4Q-t3000x3000.jpg"/>
     </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1537963939</guid>
@@ -34747,61 +34792,6 @@ https://www.facebook.com/stoyan.panchev
 🙏 Благодарим на партньорите на проекта: Yotpo. | StorpoolStorage | HackSoft | SuperHosting.BG | LimeChain | Novator | Dynaphos | Aula.bg | Ardes.bg | Decibel 🙏</description>
       <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/294544106-thesuperhumanpodcast-thesuperhumanpodcast-episode011.mp3" length="135363503"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-MSFbMoZtzf0v6vZy-KZywcw-t3000x3000.jpg"/>
-    </item><item>
-      <guid isPermaLink="false">tag:soundcloud,2010:tracks/293444613</guid>
-      <title>Еп010 | За инициативите на Аз Мога - Тук и Сега с Константин и Алекса</title>
-      <pubDate>Thu, 17 Nov 2016 09:36:43 +0000</pubDate>
-      <link>https://soundcloud.com/thesuperhumanpodcast/thesuperhumanpodcast-episode010</link>
-      <itunes:duration>01:18:54</itunes:duration>
-      <itunes:author>Свръхчовекът с Георги Ненов</itunes:author>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>В Епизод №10 на &quot;Свръхчовекът: как да живеем живота на мечтите си&quot; ви запознавам с Константин Рачев и Алекса Тачев, част от екипа на www.az-moga.bg. В разговора обсъждаме инициативите на &quot;Аз Мога Тук и Сега&quot;, трудностите, с които се сблъскват учениците, завършвайки училище, образователната система, мотивацията и средата, здравето на младите хора, както и други интересни теми.
-
-Книгите, за които си говорихме в епизода са: 
-Четирите Споразумения - Мигел Руиз Диаз.
-
-https://www.facebook.com/azmoga
-www.Az-Moga.bg
-
-Приятно слушане!
-
-Ако епизодът Ви хареса, моля, споделете го с приятели! &lt;3
-
-⚠ Открий всички БОНУСИ на нашия сайт ⚠ 👉 www.bit.ly/tshp-bonus 👈
-Именно там ще намериш актуалните ексклузивни кодове за отстъпки от нашите партньори:
-📱 Лична продуктивност от Супер продуктивност
-📚🕹 Книги и техника от Ozone.bg
-📚 Книги от Locus Books
-💻 Онлайн курсове за изготвяне на ефективни презентации от 356labs
-💻 Онлайн курсове за всякакви софтуерни продукти от Aula
-🕸 За нов хостинг (и домейн) от SuperHosting.BG
-🚗 Автохимия и масла от Xadoshop.bg
-⚠ Открий всички БОНУСИ на нашия сайт ⚠ 👉 www.bit.ly/tshp-bonus 👈</itunes:summary>
-      <itunes:subtitle>В Епизод №10 на &quot;Свръхчовекът: как да живеем живо…</itunes:subtitle>
-      <description>В Епизод №10 на &quot;Свръхчовекът: как да живеем живота на мечтите си&quot; ви запознавам с Константин Рачев и Алекса Тачев, част от екипа на www.az-moga.bg. В разговора обсъждаме инициативите на &quot;Аз Мога Тук и Сега&quot;, трудностите, с които се сблъскват учениците, завършвайки училище, образователната система, мотивацията и средата, здравето на младите хора, както и други интересни теми.
-
-Книгите, за които си говорихме в епизода са: 
-Четирите Споразумения - Мигел Руиз Диаз.
-
-https://www.facebook.com/azmoga
-www.Az-Moga.bg
-
-Приятно слушане!
-
-Ако епизодът Ви хареса, моля, споделете го с приятели! &lt;3
-
-⚠ Открий всички БОНУСИ на нашия сайт ⚠ 👉 www.bit.ly/tshp-bonus 👈
-Именно там ще намериш актуалните ексклузивни кодове за отстъпки от нашите партньори:
-📱 Лична продуктивност от Супер продуктивност
-📚🕹 Книги и техника от Ozone.bg
-📚 Книги от Locus Books
-💻 Онлайн курсове за изготвяне на ефективни презентации от 356labs
-💻 Онлайн курсове за всякакви софтуерни продукти от Aula
-🕸 За нов хостинг (и домейн) от SuperHosting.BG
-🚗 Автохимия и масла от Xadoshop.bg
-⚠ Открий всички БОНУСИ на нашия сайт ⚠ 👉 www.bit.ly/tshp-bonus 👈</description>
-      <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/293444613-thesuperhumanpodcast-thesuperhumanpodcast-episode010.mp3" length="189356515"/>
-      <itunes:image href="https://i1.sndcdn.com/artworks-000533244273-3e7ev8-t3000x3000.jpg"/>
     </item>
       </channel>
     </rss>
