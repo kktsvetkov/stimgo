@@ -10,6 +10,7 @@
 	private const REGEXPS = [
 		'~^Еп(?<episodeNumber>\d+) \| ( )?(Проф\. )?(д\-р )?(?<firstName>\w+) (?<lastName>\w+)\: ~u',
 		'~^Eп(?<episodeNumber>\d+) \| (?<firstName>\w+) (?<lastName>\w+)\: ~u',
+		'~^Еп\s*(?<episodeNumber>\d+) \| (?<firstName>\w+) (?<lastName>\w+)\: ~u',
 		'~^Еп(?<episodeNumber>\d+) \| (?<firstName>\w+) (?<lastName>\w+) \- .+\: ~u',
 		'~^Еп(?<episodeNumber>\d+) \| (?<firstName>\w+) (?<lastName>\w+\-\w+)\: ~u',
 		'~^Еп(?<episodeNumber>\d+) \| .+ (?:с|със) (?<firstName>\w+) (?<lastName>\w+)$~u',
